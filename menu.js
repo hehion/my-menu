@@ -26,6 +26,5 @@ document.write(`
   　<a href="https://hhcoding.blogspot.com">CoDing</a>
   　<a href="https://hhmathscience.blogspot.com">MathScience</a>
   　<a href="https://hh-movement.blogspot.com">MoVeMent</a>
-  　Text
 <br /><hr />
 `);
