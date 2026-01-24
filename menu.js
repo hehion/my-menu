@@ -18,6 +18,8 @@ document.write(`
   　<a href="https://hhlearnrun.blogspot.com">Learn!Run!</a>
   　<a href="https://hhlanguage.blogspot.com">LanGuaGe</a>
   　<a href="https://hhcoding.blogspot.com">CoDing</a>
+  　<a href="https://hhmathscience.blogspot.com">MathScience</a>
+  　<a href="https://hh-movement.blogspot.com">MoVeMent</a>
   　Text
 <br /><hr />
 `);
