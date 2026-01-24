@@ -31,7 +31,12 @@ h2.date-header {
 
 /* 6. 포스트 하단(푸터) 영역 - 배경 및 여백 */
 .post-footer {
-
+    margin: 20px -2px 0;  /* 20px -2px 0 */
+    padding: 5px 10px;  /* 5px 10px */
+    background-color: transparent;
+    border-bottom: 0px solid transparent;
+    line-height: 0;
+    font-size: 90%;
 }
 
 /* 7. 블로그 전체 폭 (아까 언급한 중앙 제어용) */
