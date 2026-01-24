@@ -32,7 +32,7 @@ h2.date-header {
 /* 6. 포스트 하단(푸터) 영역 - 배경 및 여백 */
 .post-footer {
     margin: 20px -2px 0 !important;
-    padding: 3px !important; /* 여백을 조금 더 줘서 쾌적하게 */
+    padding: 10px !important; /* 여백을 조금 더 줘서 쾌적하게 */
     background-color: #fefefe !important;
     border-top: 1px solid #eeeeee !important; /* 상단 구분선 추가 */
 }
