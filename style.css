@@ -55,20 +55,20 @@ _width: 990px; !important;
 
 .main-inner .columns {
 padding-left: 0;
-padding-right: 220px; !important;
+padding-right: 210px; !important;
 }
 .main-inner .fauxcolumn-center-outer {
 left: 0;
-right: 220px; !important;
+right: 210px; !important;
 /* IE6 does not respect left and right together */
 _width: expression(this.parentNode.offsetWidth -
 parseInt("0") -
-parseInt("220px") + 'px'); !important;
+parseInt("210px") + 'px'); !important;
 }
 .main-inner .fauxcolumn-right-outer {
-width: 220px; !important;
+width: 210px; !important;
 }
 .main-inner .column-right-outer {
-width: 220px; !important;
-margin-right: -220px; !important;
+width: 210px; !important;
+margin-right: -210px; !important;
 }
