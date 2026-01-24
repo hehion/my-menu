@@ -1,7 +1,6 @@
-// 관리자 체크: 로컬 스토리지에 'isAdmin'이 true면 추적 스크립트 실행 방지
 if (localStorage.getItem('isAdmin') === 'true') {
-    window['ga-disable-UA-XXXXX-Y'] = true; // 구글 애널리틱스 중지 (선택사항)
-    console.log("관리자 접속입니다. 추적을 중지합니다.");
+    window['ga-disable-UA-XXXXX-Y'] = true;
+    console.log("관리자 접속");
 }
 
 document.write(`
