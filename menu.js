@@ -17,6 +17,6 @@ document.write(`
   　<a href="https://hhchef.blogspot.com">Chef!</a>
   　<a href="https://hhlearnrun.blogspot.com">Learn!Run!</a>
   　<a href="https://hhlanguage.blogspot.com">LanGuaGe</a>
-</div>
+  　<a href="https://hhcoding.blogspot.com">CoDing</a>
 <br /><hr />
 `);
