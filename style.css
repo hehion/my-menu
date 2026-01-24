@@ -1,6 +1,6 @@
 /* 1. 블로그 제목 설정 */
 .Header h1 {
-    font-size: 3.5vmin !important; /* 조금 더 강조되도록 소폭 조정 */
+    font-size: 5.5vmin !important; /* 조금 더 강조되도록 소폭 조정 */
     font-weight: bold !important;
 }
 
