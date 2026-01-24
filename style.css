@@ -1,0 +1,44 @@
+/* 1. 블로그 제목 설정 */
+.Header h1 {
+    font-size: 3.5vmin !important; /* 조금 더 강조되도록 소폭 조정 */
+    font-weight: bold !important;
+}
+
+/* 2. 전체 본문 및 기본 글씨 */
+body {
+    font-size: 2.2vmin !important;
+    line-height: 1.6 !important; /* 가독성을 위한 줄간격 추가 */
+}
+
+/* 3. 포스트 제목 (글 제목) */
+h3.post-title, h3.post-title a {
+    font-size: 2.5vmin !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+/* 4. 날짜 표시 부분 */
+h2.date-header {
+    font-size: 2vmin !important;
+    color: #666666 !important; /* 날짜는 살짝 흐리게 처리 */
+}
+
+/* 5. 댓글 링크 디자인 (비어있던 부분 보완) */
+.comment-link {
+    font-size: 1.8vmin !important;
+    color: #888888 !important;
+}
+
+/* 6. 포스트 하단(푸터) 영역 - 배경 및 여백 */
+.post-footer {
+    margin: 20px -2px 0 !important;
+    padding: 10px !important; /* 여백을 조금 더 줘서 쾌적하게 */
+    background-color: #fefefe !important;
+    border-top: 1px solid #eeeeee !important; /* 상단 구분선 추가 */
+}
+
+/* 7. 블로그 전체 폭 (아까 언급한 중앙 제어용) */
+.content-outer, .main-outer {
+    max-width: 1000px !important; /* 원하는 폭으로 고정 가능 */
+    margin: 0 auto !important;
+}
