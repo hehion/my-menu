@@ -33,8 +33,9 @@ h2.date-header {
 .post-footer {
     margin: 20px -2px 0 !important;
     padding: 10px !important; /* 여백을 조금 더 줘서 쾌적하게 */
-    background-color: #fefefe !important;
+    background-color: #eeeeee !important;
     border-top: 1px solid #eeeeee !important; /* 상단 구분선 추가 */
+    border-bottome: 1px solid #eeeeee !important; /* 하단 구분선 추가 */
 }
 
 /* 7. 블로그 전체 폭 (아까 언급한 중앙 제어용) */
