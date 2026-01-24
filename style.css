@@ -1,6 +1,6 @@
 /* 1. 블로그 제목 설정 */
 .Header h1 {
-    font-size: 3.5vmin !important; /* 조금 더 강조되도록 소폭 조정 */
+    font-size: 5.5vmin !important; /* 조금 더 강조되도록 소폭 조정 */
     font-weight: bold !important;
 }
 
@@ -12,14 +12,14 @@ body {
 
 /* 3. 포스트 제목 (글 제목) */
 h3.post-title, h3.post-title a {
-    font-size: 2.2vmin !important;
+    font-size: 2.3vmin !important;
     font-weight: bold !important;
     text-decoration: none !important;
 }
 
 /* 4. 날짜 표시 부분 */
 h2.date-header {
-    font-size: 2vmin !important;
+    font-size: 2.3vmin !important;
     color: #666666 !important; /* 날짜는 살짝 흐리게 처리 */
 }
 
