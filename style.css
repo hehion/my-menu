@@ -2,7 +2,6 @@
 .Header h1 {
     font-size: 5.5vmin !important; /* 조금 더 강조되도록 소폭 조정 */
     font-weight: bold !important;
-    background-color: #aaaaaa !important;
 }
 
 /* 2. 전체 본문 및 기본 글씨 */
