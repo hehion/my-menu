@@ -31,8 +31,8 @@ h2.date-header {
 
 /* 6. 포스트 하단(푸터) 영역 - 배경 및 여백 */
 .post-footer {
-    margin: 10px -2px 0;  /* 20px -2px 0 */
-    padding: 3px 3px;  /* 5px 10px */
+    margin: 3px -2px 0;  /* 20px -2px 0 */
+    padding: 1px 1px;  /* 5px 10px */
     background-color: transparent;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
