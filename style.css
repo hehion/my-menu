@@ -40,6 +40,6 @@ h2.date-header {
 
 /* 7. 블로그 전체 폭 (아까 언급한 중앙 제어용) */
 .content-outer, .main-outer {
-    max-width: 1000px !important; /* 원하는 폭으로 고정 가능 */
+    max-width: 990px !important; /* 원하는 폭으로 고정 가능 */
     margin: 0 auto !important;
 }
