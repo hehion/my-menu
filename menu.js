@@ -19,14 +19,14 @@ document.write(`
   <a href="https://hhincs.blogspot.com/2018/06/20185.html"><font style="font-size:1.8vmin;">..in</font>CS</a>
   <a href="https://hharchstudy.blogspot.com"><font style="font-size:1.8vmin;">arch</font>STUDY</a>
 <br>
+  　<a href="https://hhlearnrun.blogspot.com">Learn!Run!</a>
   　<a href="https://hhdrawing.blogspot.com">Draw</a>
   　<a href="https://hhchef.blogspot.com">Chef!</a>
-  　<a href="https://hhlearnrun.blogspot.com">Learn!Run!</a>
-  　<a href="https://hhlanguage.blogspot.com">Language</a>
+  　<a href="https://hhplaysing.blogspot.com">Play<font style="font-size:1.8vmin;">&</font>Sing</a
 <br />
+  　<a href="https://hhlanguage.blogspot.com">Language</a>
   　<a href="https://hhcoding.blogspot.com">Coding</a>
-  　<a href="https://hhmathscience.blogspot.com">MathScience</a>
+  　<a href="https://hhmathscience.blogspot.com">M<font style="font-size:1.8vmin;">ath</font>S<font style="font-size:1.8vmin;">cience</font></a>
   　<a href="https://hh-movement.blogspot.com">Move<font style="font-size:1.8vmin;">ment</font></a>
-  　<a href="https://hhplaysing.blogspot.com">Play<font style="font-size:1.8vmin;">&</font>Sing</a>
 <br /><hr />
 `);
