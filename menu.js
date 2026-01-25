@@ -1,9 +1,5 @@
-if (localStorage.getItem('isAdmin') === 'true') {
-    window['ga-disable-UA-XXXXX-Y'] = true;
-    console.log("관리자 접속");
-}
-
-document.write(`
+(function() {
+  const menuHTML = `
 <div align="left" style="font-size:2.5vmin;">
   <a href="https://hehion.blogspot.com/p/flytothe.html"><b>가라!종이비행기</b></a>
   　<a href="https://hehion.blogspot.com/p/i.html"><b>hh</b></a>
@@ -29,4 +25,8 @@ document.write(`
   　<a href="https://hhmathscience.blogspot.com">M<font style="font-size:1.8vmin;">ath</font>S<font style="font-size:1.8vmin;">cience</font></a>
   　<a href="https://hh-movement.blogspot.com">Move<font style="font-size:1.8vmin;">ment</font></a>
 <br /><hr />
-`);
+`;
+
+  // 화면에 즉시 뿌려주기
+  document.write(menuHTML);
+})();
