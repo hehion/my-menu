@@ -5,6 +5,7 @@
   　<a href="https://hehion.blogspot.com/p/i.html"><b>hh</b></a>
   　<a href="https://hhtoday.blogspot.kr/"><font color="fafafa">'s today</font></a>
   　<a href="https://hhyesterday.blogspot.kr/p/20130728.html"><font color="fafafa">'s yesterday</font></a>
+  　<a href="https://hhtomorrow.blogspot.com"><font color="fafafa">'s tomorrow</font></a>
   　<a href="https://hhfavorite.blogspot.kr/"><font color="fafafa">'s ☆</font></a>
 </div>
 <div align="right" style="font-size:2.5vmin;">
