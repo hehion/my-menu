@@ -13,9 +13,9 @@
 <a href="https://hehion.blogspot.kr/"><b>home</b></a>
 　<a href="https://hhscrap.blogspot.kr/" style="font-size: 2.5vmin; text-align: left;">scrap</a>
 </td><td align="right" style="font-size: 2.5vmin;" width="70%">
-<a href="https://hharchziz.blogspot.com"><font style="font-size: 1.8vmin;">arch</font>ZiZ</a>
+<a href="https://hharchdesign.blogspot.com"><font style="font-size: 1.8vmin;">arch</font>Design</a>
  <a href="https://hharchlesson.blogspot.com"><font style="font-size: 1.8vmin;">arch</font>Lesson</a>
- <a href="https://hharchstudy.blogspot.com"><font style="font-size: 1.8vmin;">arch</font>STUDY</a>
+ <a href="https://hharchstudy.blogspot.com"><font style="font-size: 1.8vmin;">arch</font>Study</a>
  <a href="https://hharchug.blogspot.kr/">ARCH<font style="font-size: 1.8vmin;">ug</font></a>
  <a href="https://hhinnc.blogspot.kr"><font style="font-size: 1.8vmin;">..in</font>NC</a>
  <a href="https://hhincs.blogspot.com/2018/06/20185.html"><font style="font-size: 1.8vmin;">..in</font>CS</a>
