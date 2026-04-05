@@ -37,24 +37,13 @@
 </td></tr></tbody></table></div>
 <hr />
 <style>
-/* 둥둥 떠다니는 애니메이션 (ZIZ 매트릭스와 통일) */
-@keyframes ziz-float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); } /* 위로 살짝 유영 */
-}
-
+@keyframes ziz-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
 @keyframes ziz-color {
-  0% { color: #e05a5a; }
-  16% { color: #e0a05a; }
-  33% { color: #a0c040; }
-  50% { color: #40b0c0; }
-  66% { color: #7060e0; }
-  83% { color: #c050a0; }
-  100% { color: #e05a5a; }
+  0% { color: #e05a5a; } 16% { color: #e0a05a; } 33% { color: #a0c040; }
+  50% { color: #40b0c0; } 66% { color: #7060e0; } 83% { color: #c050a0; } 100% { color: #e05a5a; }
 }
-
 .ziz-blink {
-  display: inline-block; /* 애니메이션 적용을 위해 필요 */
+  display: inline-block;
   animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
   font-weight: bold !important;
   font-size: 2.5vmin !important;
@@ -63,5 +52,15 @@
 </style>
 `;
 
-  document.write(menuHTML);
+  // [핵심수정] document.write 대신 innerHTML 사용
+  const target = document.getElementById('hh-menu-container');
+  if (target) {
+    target.innerHTML = menuHTML;
+  } else {
+    // 타겟이 없으면 body 맨 위에 생성 (백업)
+    const div = document.createElement('div');
+    div.id = 'hh-menu-container';
+    div.innerHTML = menuHTML;
+    document.body.prepend(div);
+  }
 })();
