@@ -52,15 +52,15 @@
 </style>
 `;
 
-  // [핵심수정] document.write 대신 innerHTML 사용
-  const target = document.getElementById('hh-menu-container');
-  if (target) {
-    target.innerHTML = menuHTML;
-  } else {
-    // 타겟이 없으면 body 맨 위에 생성 (백업)
-    const div = document.createElement('div');
-    div.id = 'hh-menu-container';
-    div.innerHTML = menuHTML;
-    document.body.prepend(div);
-  }
+  // [KIK] 안전하게 메뉴를 꽂아넣는 로직
+  const checkTarget = () => {
+    const target = document.getElementById('hh-menu-anchor');
+    if (target) {
+      target.innerHTML = menuHTML;
+    } else {
+      // 타겟이 없으면 0.1초 뒤 다시 시도
+      setTimeout(checkTarget, 100);
+    }
+  };
+  checkTarget();
 })();
