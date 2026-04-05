@@ -36,6 +36,9 @@
 　<a href="https://hhmathscience.blogspot.com">M<font style="font-size: 1.8vmin;">ath</font>S<font style="font-size: 1.8vmin;">cience</font></a>
 </td></tr></tbody></table></div>
 <hr />
+<div id="hh-scroll-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+  ↑ TOP
+</div>
 <style>
 /* 둥둥 떠다니는 애니메이션 (ZIZ 매트릭스와 통일) */
 @keyframes ziz-float { 
@@ -53,6 +56,24 @@
   font-size: 2.5vmin !important;
   text-decoration: none;
 }
+  /* [KIK] 우측 하단 고정 TOP 버튼 */
+  #hh-scroll-top {
+    position: fixed;
+    bottom: 25px; /* 바닥에서 25px 이격 */
+    right: 25px;  /* 우측에서 25px 이격 */
+    cursor: pointer;
+    z-index: 9999;
+    font-weight: bold;
+    font-size: 13px; /* 너무 크지 않게 조절 */
+    opacity: 0.3; 
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  #hh-scroll-top:hover {
+    opacity: 1;
+    color: #5e8ab4; /* KIK 포인트 컬러 */
+    transform: translateY(-3px); /* 호버 시 살짝 떠오름 */
+  }
 </style>
 `;
 
