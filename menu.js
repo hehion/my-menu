@@ -2,32 +2,33 @@
   const menuHTML = `
 <style>
   #hh-menu-wrapper { 
-    font-family: 'Pretendard', -apple-system, sans-serif; 
-    line-height: 2.0;
+    /* 폰트 패밀리를 제거하여 브라우저/블로그 기본 서체로 복구 */
+    line-height: 1.4; /* 줄 간격을 2.0에서 1.4로 좁힘 */
   }
   
   #hh-menu-wrapper a {
     text-decoration: none;
     color: #444;
+    /* 탄성 있는 상승 효과 유지 */
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     display: inline-block;
     position: relative;
-    padding: 2px 4px;
+    padding: 1px 4px; /* 세로 패딩을 줄여 간격 밀착 */
   }
 
   /* 호버 시 위로 톡 튀어오르는 효과 */
   #hh-menu-wrapper a:hover {
     color: #000 !important;
-    transform: translateY(-5px); 
-    text-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transform: translateY(-4px); 
+    text-shadow: 0 3px 6px rgba(0,0,0,0.1); 
   }
 
-  /* ZIZ 전용: 무지개빛 유영 */
+  /* ZIZ 전용: 무지개빛 유영 (테두리 없음) */
   .ziz-rainbow {
-    font-weight: 900 !important;
-    font-size: 2.7vmin !important;
+    font-weight: bold !important;
+    font-size: 2.5vmin !important;
     animation: ziz-color-flow 4s linear infinite, ziz-float 2s ease-in-out infinite;
-    padding: 2px 0px !important;
+    padding: 1px 0px !important;
   }
 
   @keyframes ziz-color-flow {
@@ -42,15 +43,15 @@
 
   @keyframes ziz-float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
+    50% { transform: translateY(-2px); }
   }
 
-  /* [KIK] scrap은 또렷하게, 나머지는 은은하게 */
+  /* 보조 텍스트 및 Scrap 설정 */
   .sub-text { color: #fafafa !important; font-weight: normal !important; }
-  .scrap-text { color: #444 !important; font-weight: bold !important; } /* scrap 강조 */
+  .scrap-text { color: #444 !important; font-weight: bold !important; } 
   
   .small-font { font-size: 1.8vmin !important; }
-  hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+  hr { border: 0; border-top: 1px solid #eee; margin: 8px 0; } /* hr 간격도 좁힘 */
 </style>
 
 <div id="hh-menu-wrapper">
@@ -104,6 +105,5 @@
 </div>
 `;
 
-  // 화면에 즉시 뿌려주기
   document.write(menuHTML);
 })();
