@@ -37,10 +37,12 @@
 </td></tr></tbody></table></div>
 <hr />
 <style>
-@keyframes ziz-pulse {
-  0%, 100% { opacity: 1; color: inherit; }
-  50% { opacity: 0.3; }
+/* 둥둥 떠다니는 애니메이션 (ZIZ 매트릭스와 통일) */
+@keyframes ziz-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); } /* 위로 살짝 유영 */
 }
+
 @keyframes ziz-color {
   0% { color: #e05a5a; }
   16% { color: #e0a05a; }
@@ -50,14 +52,16 @@
   83% { color: #c050a0; }
   100% { color: #e05a5a; }
 }
+
 .ziz-blink {
-  animation: ziz-pulse 1.2s ease-in-out infinite, ziz-color 4s linear infinite;
+  display: inline-block; /* 애니메이션 적용을 위해 필요 */
+  animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
   font-weight: bold !important;
   font-size: 2.5vmin !important;
+  text-decoration: none;
 }
 </style>
 `;
 
-  // 화면에 즉시 뿌려주기
   document.write(menuHTML);
 })();
