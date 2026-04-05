@@ -64,7 +64,7 @@
     cursor: pointer;
     z-index: 9999;
     font-weight: bold;
-    font-size: 13px; /* 너무 크지 않게 조절 */
+    font-size: 3.5vmin; /* 너무 크지 않게 조절 */
     opacity: 0.3; 
     transition: all 0.3s ease;
     user-select: none;
