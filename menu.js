@@ -56,15 +56,6 @@
 </style>
 `;
 
-  // [KIK] 앵커를 찾아서 메뉴를 주입하는 로직
-  const anchor = document.getElementById('hh-menu-anchor');
-  if (anchor) {
-    anchor.innerHTML = menuHTML;
-  } else {
-    // 앵커가 없으면 body 최상단에 강제 주입
-    const div = document.createElement('div');
-    div.id = 'hh-menu-anchor';
-    div.innerHTML = menuHTML;
-    document.body.prepend(div);
-  }
+  // 화면에 즉시 뿌려주기
+  document.write(menuHTML);
 })();
