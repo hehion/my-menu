@@ -25,13 +25,37 @@
 　<a href="https://hhchef.blogspot.com">Chef!</a>
 　<a href="https://hh-movement.blogspot.com">Move<font style="font-size: 1.8vmin;">ment</font></a>
 　<a href="https://hhlanguage.blogspot.com">L<font style="font-size: 1.8vmin;">anguage</font></a>
-<br />
+</div>
+<div style="font-size: 2.5vmin;">
+<table style="width: 100%;"><tbody><tr><td align="left" style="font-size: 2.5vmin;" width="30%">
+<a href="https://hehion.blogspot.com/p/hehion-system-22.html" class="ziz-blink">ZIZ</a>
+</td><td align="right" style="font-size: 2.5vmin;" width="70%">
 　<a href="https://hhdrawing.blogspot.com">Draw</a>
 　<a href="https://hhplaysing.blogspot.com">Play<font style="font-size: 1.8vmin;">&amp;</font>Sing</a>
 　<a href="https://hhcoding.blogspot.com">C<font style="font-size: 1.8vmin;">oding</font></a>
 　<a href="https://hhmathscience.blogspot.com">M<font style="font-size: 1.8vmin;">ath</font>S<font style="font-size: 1.8vmin;">cience</font></a>
-<br /><hr />
-</div>
+</td></tr></tbody></table></div>
+<hr />
+<style>
+@keyframes ziz-pulse {
+  0%, 100% { opacity: 1; color: inherit; }
+  50% { opacity: 0.3; }
+}
+@keyframes ziz-color {
+  0% { color: #e05a5a; }
+  16% { color: #e0a05a; }
+  33% { color: #a0c040; }
+  50% { color: #40b0c0; }
+  66% { color: #7060e0; }
+  83% { color: #c050a0; }
+  100% { color: #e05a5a; }
+}
+.ziz-blink {
+  animation: ziz-pulse 1.2s ease-in-out infinite, ziz-color 4s linear infinite;
+  font-weight: bold !important;
+  font-size: 2.5vmin !important;
+}
+</style>
 `;
 
   // 화면에 즉시 뿌려주기
