@@ -9,10 +9,10 @@
 　<a href="https://hhfavorite.blogspot.kr/" style="font-size: 2.5vmin;"><font color="fafafa">'s ☆</font></a>
 </div>
 <div style="font-size: 2.5vmin;">
-<table style="width: 100%;"><tbody><tr><td align="left" style="font-size: 2.5vmin;" width="30%">
+<table style="width: 100%;"><tbody><tr><td align="left" style="font-size: 2.5vmin;" width="20%">
 <a href="https://hehion.blogspot.kr/"><b>home</b></a>
 　<a href="https://hhscrap.blogspot.kr/" style="font-size: 2.5vmin; text-align: left;">scrap</a>
-</td><td align="right" style="font-size: 2.5vmin;" width="70%">
+</td><td align="right" style="font-size: 2.5vmin;" width="80%">
 <a href="https://hharchdesign.blogspot.com"><font style="font-size: 1.8vmin;">arch</font>Design</a>
  <a href="https://hharchlesson.blogspot.com"><font style="font-size: 1.8vmin;">arch</font>Lesson</a>
  <a href="https://hharchstudy.blogspot.com"><font style="font-size: 1.8vmin;">arch</font>Study</a>
