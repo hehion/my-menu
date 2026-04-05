@@ -37,7 +37,11 @@
 </td></tr></tbody></table></div>
 <hr />
 <style>
-@keyframes ziz-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+/* 둥둥 떠다니는 애니메이션 (ZIZ 매트릭스와 통일) */
+@keyframes ziz-float { 
+  0%, 100% { transform: translateY(0); } 
+  50% { transform: translateY(-3px); } 
+}
 @keyframes ziz-color {
   0% { color: #e05a5a; } 16% { color: #e0a05a; } 33% { color: #a0c040; }
   50% { color: #40b0c0; } 66% { color: #7060e0; } 83% { color: #c050a0; } 100% { color: #e05a5a; }
@@ -52,15 +56,15 @@
 </style>
 `;
 
-  // [KIK] 안전하게 메뉴를 꽂아넣는 로직
-  const checkTarget = () => {
-    const target = document.getElementById('hh-menu-anchor');
-    if (target) {
-      target.innerHTML = menuHTML;
-    } else {
-      // 타겟이 없으면 0.1초 뒤 다시 시도
-      setTimeout(checkTarget, 100);
-    }
-  };
-  checkTarget();
+  // [KIK] 지정된 앵커에 메뉴를 주입하는 로직
+  const anchor = document.getElementById('hh-menu-anchor');
+  if (anchor) {
+    anchor.innerHTML = menuHTML;
+  } else {
+    // 앵커가 없을 경우를 대비한 백업 (body 최상단 주입)
+    const div = document.createElement('div');
+    div.id = 'hh-menu-anchor';
+    div.innerHTML = menuHTML;
+    document.body.prepend(div);
+  }
 })();
