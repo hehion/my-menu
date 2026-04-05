@@ -56,12 +56,12 @@
 </style>
 `;
 
-  // [KIK] 지정된 앵커에 메뉴를 주입하는 로직
+  // [KIK] 앵커를 찾아서 메뉴를 주입하는 로직
   const anchor = document.getElementById('hh-menu-anchor');
   if (anchor) {
     anchor.innerHTML = menuHTML;
   } else {
-    // 앵커가 없을 경우를 대비한 백업 (body 최상단 주입)
+    // 앵커가 없으면 body 최상단에 강제 주입
     const div = document.createElement('div');
     div.id = 'hh-menu-anchor';
     div.innerHTML = menuHTML;
