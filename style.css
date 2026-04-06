@@ -19,6 +19,22 @@
     }
 }
 
+/* [추가] 모바일 가로모드: vw 기반 폰트가 너무 커지는 문제 보정 */
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .Header h1 {
+        font-size: clamp(30px, 6vh, 42px) !important;
+    }
+    h3.post-title, h3.post-title a, div.widget h2.title {
+        font-size: clamp(22px, 5vh, 30px) !important;
+    }
+    body {
+        font-size: clamp(16px, 3.5vh, 20px) !important;
+    }
+    .comment-link, h2.date-header {
+        font-size: clamp(13px, 3vh, 16px) !important;
+    }
+}
+
 /* [위계 1순위] 블로그 최상단 타이틀: 가장 크고 웅장하게 [cite: 2026-04-06] */
 .Header h1 {
     font-size: clamp(38px, 10vw, 55px) !important;

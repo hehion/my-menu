@@ -64,16 +64,17 @@
     display: inline-block;
     animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
     font-weight: bold !important;
-    font-size: clamp(34px, 10vw, 42px) !important; /* [수정] 1순위와 2순위 사이의 존재감 [cite: 2026-04-06] */
+    font-size: clamp(30px, 8vw, 34px) !important; /* [수정] 2순위 메뉴와 동일한 크기로 위계 통일 */
     line-height: 1 !important;
     text-decoration: none;
     position: relative; top: -2px;
   }
   #hh-scroll-top {
-    position: fixed; bottom: 35px; right: 35px; cursor: pointer; z-index: 9999;
-    font-weight: bold; 
-    font-size: clamp(38px, 10vw, 55px) !important; /* 1순위 유지 [cite: 2026-04-06] */
+    position: static; display: inline-block; cursor: pointer;
+    font-weight: bold;
+    font-size: clamp(38px, 10vw, 55px) !important; /* 1순위 유지 */
     opacity: 0.4; transition: all 0.3s ease; user-select: none;
+    margin-top: 8px;
   }
   #hh-scroll-top:hover { opacity: 1; color: #5e8ab4; transform: translateY(-3px); }
 </style>
