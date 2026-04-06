@@ -1,5 +1,5 @@
 (function() {
-  /* [해설] 시각적 보정: 포스트 제목(28px)보다 수치를 2px 더 키워 대등하게 맞춤 [cite: 2026-04-06] */
+  /* [해설] 시각적 보정: 메뉴가 제목(28px)보다 확실히 돋보이도록 최소 30px 유지 [cite: 2026-04-06] */
   const baseSize = "font-size: clamp(30px, 8vw, 34px); font-weight: 500;"; 
   const subSize = "font-size: clamp(22px, 5.5vw, 26px);";
 
@@ -50,6 +50,7 @@
 </div>
 
 <hr style="margin: 40px 0;" />
+
 <div id="hh-scroll-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
   ↑ TOP
 </div>
@@ -64,19 +65,29 @@
     display: inline-block;
     animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
     font-weight: bold !important;
-    font-size: clamp(30px, 8vw, 34px) !important; /* [수정] 2순위 메뉴와 동일한 크기로 위계 통일 */
+    font-size: clamp(34px, 10vw, 42px) !important;
     line-height: 1 !important;
     text-decoration: none;
     position: relative; top: -2px;
   }
+  /* [해설] TOP 버튼 스타일: fixed로 복구하여 언제든 클릭 가능하게 설계 [cite: 2026-04-06] */
   #hh-scroll-top {
-    position: static; display: inline-block; cursor: pointer;
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    z-index: 9999;
+    cursor: pointer;
     font-weight: bold;
-    font-size: clamp(38px, 10vw, 55px) !important; /* 1순위 유지 */
-    opacity: 0.4; transition: all 0.3s ease; user-select: none;
-    margin-top: 8px;
+    /* 1순위 크기 유지 [cite: 2026-04-06] */
+    font-size: clamp(38px, 10vw, 55px) !important; 
+    /* 평소엔 투명하게 하여 본문 방해 최소화 [cite: 2026-04-06] */
+    opacity: 0.2; 
+    transition: all 0.3s ease;
+    user-select: none;
+    background: transparent;
   }
-  #hh-scroll-top:hover { opacity: 1; color: #5e8ab4; transform: translateY(-3px); }
+  /* 마우스를 올렸을 때만 선명하게 보임 [cite: 2026-04-06] */
+  #hh-scroll-top:hover { opacity: 1; color: #5e8ab4; transform: translateY(-5px); }
 </style>
 `;
   document.write(menuHTML);

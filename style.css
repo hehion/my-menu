@@ -1,17 +1,17 @@
-/* [해설] 블로그 전체 폭: PC에서 990px 고정 및 중앙 배치 [cite: 2026-04-06] */
+/* [해설] 블로그 전체 폭 설계 [cite: 2026-04-06] */
 .content-outer, .content-fauxcolumn-outer, .region-inner {
     min-width: 990px !important;
     max-width: 990px !important;
     margin: 0 auto !important;
 }
 
-/* [해설] 사이드바 레이아웃: 우측 210px 공간 확보 [cite: 2026-04-06] */
+/* [해설] 사이드바 210px 공간 확보 [cite: 2026-04-06] */
 .main-inner .columns { padding-left: 0 !important; padding-right: 210px !important; }
 .main-inner .fauxcolumn-center-outer { left: 0 !important; right: 210px !important; }
 .main-inner .fauxcolumn-right-outer, .main-inner .column-right-outer { width: 210px !important; }
 .main-inner .column-right-outer { margin-right: -210px !important; }
 
-/* [해설] 모바일 대응: 990px 이하 기기에서 폭 제한 해제 [cite: 2026-04-06] */
+/* [해설] 모바일 대응 폭 설정 [cite: 2026-04-06] */
 @media screen and (max-width: 990px) {
     .content-outer, .content-fauxcolumn-outer, .region-inner, body {
         min-width: auto !important;
@@ -19,41 +19,33 @@
     }
 }
 
-/* [추가] 모바일 가로모드: vw 기반 폰트가 너무 커지는 문제 보정 */
+/* [해설] 클로드의 가로모드 보강 설계 적용 [cite: 2026-04-06] */
 @media screen and (max-width: 900px) and (orientation: landscape) {
-    .Header h1 {
-        font-size: clamp(30px, 6vh, 42px) !important;
-    }
-    h3.post-title, h3.post-title a, div.widget h2.title {
-        font-size: clamp(22px, 5vh, 30px) !important;
-    }
-    body {
-        font-size: clamp(16px, 3.5vh, 20px) !important;
-    }
-    .comment-link, h2.date-header {
-        font-size: clamp(13px, 3vh, 16px) !important;
-    }
+    .Header h1 { font-size: clamp(38px, 8vh, 50px) !important; } /* 위계 1순위 보강 [cite: 2026-04-06] */
+    h3.post-title, h3.post-title a, div.widget h2.title { font-size: clamp(30px, 7vh, 34px) !important; } /* 위계 2순위 [cite: 2026-04-06] */
+    body { font-size: clamp(22px, 5vh, 24px) !important; } /* 위계 3순위 [cite: 2026-04-06] */
+    .comment-link, h2.date-header { font-size: clamp(18px, 4vh, 20px) !important; } /* 위계 4순위 [cite: 2026-04-06] */
 }
 
-/* [위계 1순위] 블로그 최상단 타이틀: 가장 크고 웅장하게 [cite: 2026-04-06] */
+/* [위계 1순위] 블로그 타이틀 [cite: 2026-04-06] */
 .Header h1 {
     font-size: clamp(38px, 10vw, 55px) !important;
     font-weight: bold !important;
 }
 
-/* [위계 2순위] 포스트 제목 & 사이드바 타이틀: 메뉴와 동일한 크기 [cite: 2026-04-06] */
+/* [위계 2순위] 포스트 제목 & 사이드바 타이틀 [cite: 2026-04-06] */
 h3.post-title, h3.post-title a, div.widget h2.title {
     font-size: clamp(28px, 8vw, 34px) !important;
     font-weight: bold !important;
 }
 
-/* [위계 3순위] 전체 본문: 읽기 편한 기본 크기 [cite: 2026-04-06] */
+/* [위계 3순위] 전체 본문 [cite: 2026-04-06] */
 body {
     font-size: clamp(22px, 5vw, 24px) !important; 
     line-height: 1.8 !important;
 }
 
-/* [위계 4순위] 댓글 및 날짜: 가장 작고 겸손하게 [cite: 2026-04-06] */
+/* [위계 4순위] 댓글 및 날짜 [cite: 2026-04-06] */
 .comment-link, h2.date-header {
     font-size: clamp(18px, 4vw, 20px) !important;
     color: #888888 !important;
