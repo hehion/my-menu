@@ -1,48 +1,57 @@
-/* 1. 블로그 제목: 모바일에서도 위풍당당하게 */
-.Header h1 {
-    font-size: clamp(26px, 6vw, 38px) !important;
-    font-weight: bold !important;
-}
-
-/* 2. 전체 본문: 모바일 최소 15px로 상향하여 가독성 확보 */
-body {
-    font-size: clamp(15px, 4vw, 17px) !important;
-    line-height: 1.75 !important;
-    min-width: auto !important; /* 모바일 대응을 위해 최소폭 제한 해제 */
-}
-
-/* 3. 포스트 제목 (글 제목) */
-h3.post-title, h3.post-title a {
-    font-size: clamp(20px, 5vw, 24px) !important;
-    font-weight: bold !important;
-    text-decoration: none !important;
-}
-
-/* 4. 날짜 및 위젯 타이틀 */
-h2.date-header {
-    font-size: clamp(15px, 4vw, 18px) !important;
-    color: #666666 !important;
-}
-
-div.widget h2.title {
-    font-size: clamp(17px, 4.5vw, 21px) !important;
-}
-
-/* 5. 댓글 링크 */
-.comment-link {
-    font-size: clamp(13px, 3.5vw, 15px) !important;
-    color: #888888 !important;
-}
-
-/* 6. 레이아웃 폭 제어 */
-.content-outer, .main-outer {
+/* [1] 블로그 레이아웃 폭 및 중앙 정렬 복구 [cite: 2026-04-06] */
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+    min-width: 990px !important;
     max-width: 990px !important;
     margin: 0 auto !important;
 }
 
-.post-footer {
-    margin: 3px -2px 0;
-    padding: 1px 1px;
-    background-color: transparent;
-    line-height: 1.4;
+.main-inner .columns {
+    padding-left: 0 !important;
+    padding-right: 210px !important;
+}
+
+.main-inner .fauxcolumn-center-outer {
+    left: 0 !important;
+    right: 210px !important;
+}
+
+.main-inner .fauxcolumn-right-outer, .main-inner .column-right-outer {
+    width: 210px !important;
+}
+
+.main-inner .column-right-outer {
+    margin-right: -210px !important;
+}
+
+/* [2] 모바일 대응: 화면이 작아질 때만 유연하게 작동 [cite: 2026-04-06] */
+@media screen and (max-width: 990px) {
+    .content-outer, .content-fauxcolumn-outer, .region-inner, body {
+        min-width: auto !important;
+        width: 100% !important;
+    }
+}
+
+/* [3] 텍스트 가독성 설계 (모바일 최소값 상향) [cite: 2026-04-06] */
+body {
+    font-size: clamp(17px, 4.5vw, 18px) !important;
+    line-height: 1.8 !important;
+}
+
+.Header h1 {
+    font-size: clamp(30px, 8vw, 42px) !important;
+    font-weight: bold !important;
+}
+
+h3.post-title, h3.post-title a {
+    font-size: clamp(22px, 6vw, 26px) !important;
+    font-weight: bold !important;
+}
+
+h2.date-header {
+    font-size: clamp(16px, 4.5vw, 19px) !important;
+    color: #666666 !important;
+}
+
+div.widget h2.title {
+    font-size: clamp(19px, 5vw, 22px) !important;
 }

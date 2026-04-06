@@ -1,7 +1,7 @@
 (function() {
-  // [KIK] 메뉴 최소 크기를 16px로 설정해 본문(15px)보다 강조 [cite: 2026-04-06]
-  const baseSize = "font-size: clamp(16px, 4.5vw, 19px);"; 
-  const subSize = "font-size: clamp(12px, 3.5vw, 15px);";
+  // [KIK] 메뉴(19px)가 본문(17px)보다 항상 크게 보이도록 설계
+  const baseSize = "font-size: clamp(19px, 5.5vw, 21px);"; 
+  const subSize = "font-size: clamp(14px, 4vw, 16px);";
 
   const menuHTML = `
 <div align="left" style="${baseSize}">
@@ -13,7 +13,7 @@
   　<a href="https://hhfavorite.blogspot.kr/" style="color: #fafafa;">'s ☆</a>
 </div>
 
-<div style="display: flex; justify-content: space-between; align-items: baseline; ${baseSize}">
+<div style="display: flex; justify-content: space-between; align-items: baseline; ${baseSize} margin-top: 8px;">
   <div style="white-space: nowrap;">
     <a href="https://hehion.blogspot.kr/"><b>home</b></a>
     　<a href="https://hhscrap.blogspot.kr/">scrap</a>
@@ -28,14 +28,14 @@
   </div>
 </div>
 
-<div align="right" style="${baseSize}">
+<div align="right" style="${baseSize} margin-top: 8px;">
   　<a href="https://hhlearnrun.blogspot.com">Learn!Run!</a>
   　<a href="https://hhchef.blogspot.com">Chef!</a>
   　<a href="https://hh-movement.blogspot.com">Move<span style="${subSize}">ment</span></a>
   　<a href="https://hhlanguage.blogspot.com">L<span style="${subSize}">anguage</span></a>
 </div>
 
-<div style="display: flex; justify-content: space-between; align-items: baseline; ${baseSize}">
+<div style="display: flex; justify-content: space-between; align-items: baseline; ${baseSize} margin-top: 8px;">
   <div>
     <a href="https://hehion.blogspot.com/p/hehion-system-22.html" class="ziz-blink">ZIZ</a>
   </div>
@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<hr />
+<hr style="margin: 20px 0;" />
 <div id="hh-scroll-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
   ↑ TOP
 </div>
@@ -61,7 +61,7 @@
     display: inline-block;
     animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
     font-weight: bold !important;
-    font-size: clamp(18px, 5.5vw, 24px) !important;
+    font-size: clamp(21px, 6.5vw, 26px) !important;
     text-decoration: none;
   }
   #hh-scroll-top {
