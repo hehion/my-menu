@@ -1,17 +1,17 @@
-/* [해설] 블로그 전체 폭과 중앙 정렬을 고정하는 '대지 설정'입니다. */
+/* [해설] 블로그 전체 폭 설정: 990px 고정 (PC용) [cite: 2026-04-06] */
 .content-outer, .content-fauxcolumn-outer, .region-inner {
     min-width: 990px !important;
     max-width: 990px !important;
     margin: 0 auto !important;
 }
 
-/* [해설] 오른쪽 사이드바(210px) 자리를 비워두는 '평면 설계'입니다. */
+/* [해설] 사이드바 레이아웃: 우측 210px 확보 [cite: 2026-04-06] */
 .main-inner .columns { padding-left: 0 !important; padding-right: 210px !important; }
 .main-inner .fauxcolumn-center-outer { left: 0 !important; right: 210px !important; }
 .main-inner .fauxcolumn-right-outer, .main-inner .column-right-outer { width: 210px !important; }
 .main-inner .column-right-outer { margin-right: -210px !important; }
 
-/* [해설] 화면 너비가 990px 이하인 기기(모바일 등)를 위한 '가변 설계'입니다. */
+/* [해설] 모바일 대응: 화면 폭이 좁아지면 가변형으로 전환 [cite: 2026-04-06] */
 @media screen and (max-width: 990px) {
     .content-outer, .content-fauxcolumn-outer, .region-inner, body {
         min-width: auto !important;
@@ -19,24 +19,25 @@
     }
 }
 
-/* [해설] 본문 글씨 크기입니다. 최소값을 18px로 올려 모바일 가독성을 확보했습니다. */
+/* [해설] 본문 기준 크기: rem 단위를 사용해 상대적으로 조절 [cite: 2026-04-06] */
 body {
-    font-size: clamp(18px, 5vw, 19px) !important; /* 최소 18px 보장 [cite: 2026-04-06] */
+    /* [수정] 최소 1.1rem(약 17.6px) ~ 최대 1.2rem(약 19.2px) 사이에서 유연하게 작동 [cite: 2026-04-06] */
+    font-size: clamp(1.1rem, 2vw + 0.5rem, 1.2rem) !important;
     line-height: 1.8 !important;
 }
 
-/* [해설] 블로그 최상단 제목 크기입니다. */
+/* [해설] 블로그 제목: 본문의 약 2.5배 크기 유지 [cite: 2026-04-06] */
 .Header h1 {
-    font-size: clamp(32px, 9vw, 45px) !important;
+    font-size: clamp(2rem, 8vw, 3rem) !important;
     font-weight: bold !important;
 }
 
-/* [해설] 개별 포스팅(글)의 제목 크기입니다. */
+/* [해설] 포스트 제목: 본문의 약 1.5배 크기 유지 [cite: 2026-04-06] */
 h3.post-title, h3.post-title a {
-    font-size: clamp(24px, 7vw, 28px) !important;
+    font-size: clamp(1.4rem, 5vw, 1.8rem) !important;
     font-weight: bold !important;
 }
 
-/* [해설] 날짜와 사이드바 위젯 제목 크기입니다. */
-h2.date-header { font-size: clamp(17px, 5vw, 20px) !important; color: #666666 !important; }
-div.widget h2.title { font-size: clamp(20px, 6vw, 24px) !important; }
+/* [해설] 날짜 및 위젯 제목 [cite: 2026-04-06] */
+h2.date-header { font-size: 1rem !important; color: #666666 !important; }
+div.widget h2.title { font-size: 1.2rem !important; }
