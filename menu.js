@@ -66,7 +66,7 @@
   }
   #hh-scroll-top {
     position: fixed; bottom: 25px; right: 25px; cursor: pointer; z-index: 9999;
-    font-weight: bold; font-size: clamp(16px, 5vw, 24px);
+    font-weight: bold; font-size: clamp(24px, 5vw, 36px);
     opacity: 0.3; transition: all 0.3s ease; user-select: none;
   }
   #hh-scroll-top:hover { opacity: 1; color: #5e8ab4; transform: translateY(-3px); }
