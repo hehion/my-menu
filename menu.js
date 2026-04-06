@@ -1,7 +1,7 @@
 (function() {
-  /* [해설] 메뉴 크기: 본문(20~22px)보다 큰 24px를 최소값으로 설정하여 '메뉴가 더 크게' 보이게 했습니다. [cite: 2026-04-06] */
-  const baseSize = "font-size: clamp(24px, 6vw, 26px);"; 
-  const subSize = "font-size: clamp(18px, 4.5vw, 20px);";
+  /* [해설] 메뉴 크기: 가로 모드 대응을 위해 최소 28px 유지 [cite: 2026-04-06] */
+  const baseSize = "font-size: clamp(28px, 7vw, 32px);"; 
+  const subSize = "font-size: clamp(20px, 5vw, 24px);";
 
   const menuHTML = `
 <div align="left" style="${baseSize} margin-bottom: 15px;">
@@ -37,7 +37,9 @@
 
 <div style="display: flex; justify-content: space-between; align-items: baseline; ${baseSize} margin-bottom: 15px;">
   <div>
-    <a href="https://hehion.blogspot.com/p/hehion-system-22.html" class="ziz-blink">ZIZ</a>
+    <span style="display: inline-block; line-height: 0; vertical-align: middle;">
+      <a href="https://hehion.blogspot.com/p/hehion-system-22.html" class="ziz-blink">ZIZ</a>
+    </span>
   </div>
   <div style="text-align: right;">
     　<a href="https://hhdrawing.blogspot.com">Draw</a>
@@ -53,7 +55,7 @@
 </div>
 
 <style>
-  /* [해설] ZIZ 애니메이션: 크기를 본문보다 훨씬 큰 30px급으로 상향했습니다. [cite: 2026-04-06] */
+  /* [해설] ZIZ 스타일: 큰 글씨가 주변 줄간격을 밀어내지 않도록 line-height를 1로 고정했습니다. [cite: 2026-04-06] */
   @keyframes ziz-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
   @keyframes ziz-color {
     0% { color: #e05a5a; } 16% { color: #e0a05a; } 33% { color: #a0c040; }
@@ -63,13 +65,15 @@
     display: inline-block;
     animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
     font-weight: bold !important;
-    font-size: clamp(28px, 8vw, 34px) !important;
+    font-size: clamp(32px, 9vw, 40px) !important;
+    line-height: 1 !important; /* [수정] 줄간격 간섭 차단 [cite: 2026-04-06] */
     text-decoration: none;
+    position: relative;
+    top: -2px; /* [수정] 시각적 중앙 정렬 미세조정 [cite: 2026-04-06] */
   }
-  /* [해설] TOP 버튼: 화면 어디서든 잘 보이도록 크게 유지합니다. [cite: 2026-04-06] */
   #hh-scroll-top {
-    position: fixed; bottom: 30px; right: 30px; cursor: pointer; z-index: 9999;
-    font-weight: bold; font-size: clamp(30px, 6vw, 40px);
+    position: fixed; bottom: 35px; right: 35px; cursor: pointer; z-index: 9999;
+    font-weight: bold; font-size: clamp(32px, 7vw, 45px);
     opacity: 0.4; transition: all 0.3s ease; user-select: none;
   }
   #hh-scroll-top:hover { opacity: 1; color: #5e8ab4; transform: translateY(-3px); }
