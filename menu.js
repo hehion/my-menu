@@ -1,7 +1,7 @@
 (function() {
-  // [KIK] 메뉴가 본문(14px)보다 항상 크게 보이도록 최소값을 15px로 상향 [cite: 2026-04-06]
-  const baseSize = "font-size: clamp(15px, 4.5vw, 19px);"; 
-  const subSize = "font-size: clamp(11px, 3.2vw, 15px);";
+  // [KIK] 메뉴 최소 크기를 16px로 설정해 본문(15px)보다 강조 [cite: 2026-04-06]
+  const baseSize = "font-size: clamp(16px, 4.5vw, 19px);"; 
+  const subSize = "font-size: clamp(12px, 3.5vw, 15px);";
 
   const menuHTML = `
 <div align="left" style="${baseSize}">
@@ -61,14 +61,12 @@
     display: inline-block;
     animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
     font-weight: bold !important;
-    font-size: clamp(16px, 5vw, 22px) !important;
+    font-size: clamp(18px, 5.5vw, 24px) !important;
     text-decoration: none;
   }
   #hh-scroll-top {
     position: fixed; bottom: 25px; right: 25px; cursor: pointer; z-index: 9999;
-    font-weight: bold; 
-    /* 수정하신 TOP 버튼 크기 반영 */
-    font-size: clamp(24px, 5vw, 36px); 
+    font-weight: bold; font-size: clamp(24px, 5vw, 36px);
     opacity: 0.3; transition: all 0.3s ease; user-select: none;
   }
   #hh-scroll-top:hover { opacity: 1; color: #5e8ab4; transform: translateY(-3px); }
