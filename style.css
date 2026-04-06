@@ -1,54 +1,81 @@
-/* [해설] 블로그 전체 폭 설계 [cite: 2026-04-06] */
-.content-outer, .content-fauxcolumn-outer, .region-inner {
-    min-width: 990px !important;
-    max-width: 990px !important;
-    margin: 0 auto !important;
-}
-
-/* [해설] 사이드바 210px 공간 확보 [cite: 2026-04-06] */
-.main-inner .columns { padding-left: 0 !important; padding-right: 210px !important; }
-.main-inner .fauxcolumn-center-outer { left: 0 !important; right: 210px !important; }
-.main-inner .fauxcolumn-right-outer, .main-inner .column-right-outer { width: 210px !important; }
-.main-inner .column-right-outer { margin-right: -210px !important; }
-
-/* [해설] 모바일 대응 폭 설정 [cite: 2026-04-06] */
-@media screen and (max-width: 990px) {
-    .content-outer, .content-fauxcolumn-outer, .region-inner, body {
-        min-width: auto !important;
-        width: 100% !important;
-    }
-}
-
-/* [해설] 클로드의 가로모드 보강 설계 적용 [cite: 2026-04-06] */
-@media screen and (max-width: 900px) and (orientation: landscape) {
-    .Header h1 { font-size: clamp(38px, 8vh, 50px) !important; } /* 위계 1순위 보강 [cite: 2026-04-06] */
-    h3.post-title, h3.post-title a, div.widget h2.title { font-size: clamp(30px, 7vh, 34px) !important; } /* 위계 2순위 [cite: 2026-04-06] */
-    body { font-size: clamp(22px, 5vh, 24px) !important; } /* 위계 3순위 [cite: 2026-04-06] */
-    .comment-link, h2.date-header { font-size: clamp(18px, 4vh, 20px) !important; } /* 위계 4순위 [cite: 2026-04-06] */
-}
-
-/* [위계 1순위] 블로그 타이틀 [cite: 2026-04-06] */
+/* 1. 블로그 제목 설정 */
 .Header h1 {
-    font-size: clamp(38px, 10vw, 55px) !important;
+    font-size: 3.5vmin !important; /* 조금 더 강조되도록 소폭 조정 */
     font-weight: bold !important;
 }
 
-/* [위계 2순위] 포스트 제목 & 사이드바 타이틀 [cite: 2026-04-06] */
-h3.post-title, h3.post-title a, div.widget h2.title {
-    font-size: clamp(28px, 8vw, 34px) !important;
-    font-weight: bold !important;
-}
-
-/* [위계 3순위] 전체 본문 [cite: 2026-04-06] */
+/* 2. 전체 본문 및 기본 글씨 */
 body {
-    font-size: clamp(22px, 5vw, 24px) !important; 
-    line-height: 1.8 !important;
+    font-size: 2vmin !important;
+    line-height: 1.6 !important; /* 가독성을 위한 줄간격 추가 */
 }
 
-/* [위계 4순위] 댓글 및 날짜 [cite: 2026-04-06] */
-.comment-link, h2.date-header {
-    font-size: clamp(18px, 4vw, 20px) !important;
+/* 3. 포스트 제목 (글 제목) */
+h3.post-title, h3.post-title a {
+    font-size: 2.3vmin !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+/* 4. 날짜 표시 부분 */
+h2.date-header {
+    font-size: 2.3vmin !important;
+    color: #666666 !important; /* 날짜는 살짝 흐리게 처리 */
+}
+
+/* 5. 댓글 링크 디자인 (비어있던 부분 보완) */
+.comment-link {
+    font-size: 1.7vmin !important;
     color: #888888 !important;
 }
 
-.post-footer { line-height: 1.5; margin-top: 10px; }
+/* 5-1. 위젯 타잉틀 */
+div.widget h2.title {
+    font-size: 2.1vmin !important;
+}
+
+/* 6. 포스트 하단(푸터) 영역 - 배경 및 여백 */
+.post-footer {
+    margin: 3px -2px 0;  /* 20px -2px 0 */
+    padding: 1px 1px;  /* 5px 10px */
+    background-color: transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    line-height: 0;
+    font-size: 100%;
+}
+
+/* 7. 블로그 전체 폭 (아까 언급한 중앙 제어용) */
+.content-outer, .main-outer {
+    max-width: 990px !important; /* 원하는 폭으로 고정 가능 */
+    margin: 0 auto !important;
+}
+
+body {
+min-width: 960px; !important;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 990px; !important;
+max-width: 990px; !important;
+_width: 990px; !important;
+}
+
+.main-inner .columns {
+padding-left: 0;
+padding-right: 210px; !important;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 210px; !important;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("210px") + 'px'); !important;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 210px; !important;
+}
+.main-inner .column-right-outer {
+width: 210px; !important;
+margin-right: -210px; !important;
+}
