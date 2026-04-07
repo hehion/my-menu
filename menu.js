@@ -34,6 +34,7 @@
 <div style="display: flex; justify-content: space-between; align-items: baseline; font-size: 2.5vmin;">
   <div>
     <a href="https://hehion.blogspot.com/p/hehion-system-22.html" class="ziz-blink">ZIZ</a>
+　<a href="https://hhflowmap.blogspot.com" class="water-flow">flow</a>
   </div>
   <div style="text-align: right;">
     　<a href="https://hhdrawing.blogspot.com">Draw</a>
@@ -48,7 +49,7 @@
   ↑ TOP
 </div>
 <style>
-/* 기존 스타일 유지 */
+/* 기존 ZIZ 스타일 유지 */
 @keyframes ziz-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
 @keyframes ziz-color {
   0% { color: #e05a5a; } 16% { color: #e0a05a; } 33% { color: #a0c040; }
@@ -61,6 +62,30 @@
   font-size: 2.5vmin !important;
   text-decoration: none;
 }
+
+/* [최종 보정] 고발색 청색 및 광채 투명도 S자 흐름 [cite: 2026-04-07] */
+@keyframes s-wave-flow {
+  0% { transform: perspective(100px) rotateY(0deg) translate(0, 0) scaleY(1); }
+  25% { transform: perspective(100px) rotateY(10deg) translate(3px, -2px) scaleY(1.1); }
+  50% { transform: perspective(100px) rotateY(0deg) translate(6px, 0px) scaleY(0.85); }
+  75% { transform: perspective(100px) rotateY(-10deg) translate(3px, 2px) scaleY(1.1); }
+  100% { transform: perspective(100px) rotateY(0deg) translate(0, 0) scaleY(1); }
+}
+
+@keyframes water-glow {
+  0%, 100% { color: rgba(0, 102, 204, 1); text-shadow: 0 0 0px transparent; } /* 선명한 로열 블루 */
+  50% { color: rgba(135, 206, 250, 0.4); text-shadow: 0 0 8px rgba(135, 206, 250, 0.8); } /* 투명하지만 밝게 빛나는 스카이 블루 [cite: 2026-04-07] */
+}
+
+.water-flow {
+  display: inline-block;
+  animation: s-wave-flow 4.5s ease-in-out infinite, water-glow 5s ease-in-out infinite;
+  font-weight: bold !important;
+  font-size: 2.5vmin !important;
+  text-decoration: none;
+  transform-style: preserve-3d;
+}
+
   #hh-scroll-top {
     position: fixed;
     bottom: 25px;
