@@ -17,33 +17,24 @@ h3.post-title, h3.post-title a {
     text-decoration: none !important;
 }
 
-/* 4. 날짜 표시 부분 (최초 색상 50% 농도 배경 & 화이트 텍스트 시공) [cite: 2026-04-08] */
-h2.date-header {
-    /* 기존 블로그 테마 간섭 제거 */
-    background: none !important;
-    border: none !important;
-    margin: 0 0 8px 0 !important;
-    padding: 0 !important;
+/* 4. 날짜 표시 및 가젯 타이틀 통합 규격 (큰 스케일인 2.1vmin으로 통일) */
+h2.date-header, 
+div.widget h2.title {
+    font-size: 2.1vmin !important; /* 위젯 타이틀 기준인 2.1vmin으로 일치 */
+    color: #666666 !important;
+    font-weight: bold !important;
 }
 
+/* 날짜 박스 디테일 (기존에 협의한 50% 농도 및 라운딩 유지) */
 h2.date-header span {
-    /* [보정] 최초 색상(#666666)을 50% 농도의 투명도로 시공 */
     background-color: rgba(102, 102, 102, 0.5) !important; 
-    color: #ffffff !important;           /* 텍스트는 선명한 화이트 */
-    
-    font-size: 1.9vmin !important;       
-    font-weight: bold !important;
-    
-    border-radius: 12px !important;      /* 연락처 카드와 동일한 12px 곡률 */
-    padding: 3px 12px !important;        /* 타이트한 여백 설계 [cite: 2026-04-08] */
-    
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 3px 12px !important;
     display: inline-block !important;
-    width: fit-content !important;        /* 날짜 길이에 최적화된 폭 */
-    
-    /* 본문과 겹칠 때의 시각적 깊이감을 위한 블러 처리 [cite: 2026-04-08] */
+    width: fit-content !important;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 /* 5. 댓글 링크 디자인 (비어있던 부분 보완) */
