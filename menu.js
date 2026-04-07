@@ -34,7 +34,7 @@
 <div style="display: flex; justify-content: space-between; align-items: baseline; font-size: 2.5vmin;">
   <div>
     <a href="https://hehion.blogspot.com/p/hehion-system-22.html" class="ziz-blink">ZIZ</a>
-　<a href="https://hhflowmap.blogspot.com" class="water-flow">flow</a>
+　<a href="https://hhflowmap.blogspot.com/2026/04/flow-map.html" class="water-flow">flow</a>
   </div>
   <div style="text-align: right;">
     　<a href="https://hhdrawing.blogspot.com">Draw</a>
