@@ -45,25 +45,45 @@
 </div>
 
 <hr />
-<div id="hh-scroll-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
-  ↑ TOP
+
+<div class="hh-contact-card">
+  <div class="hh-identity">
+    <a href="https://hehion.blogspot.com/p/hh.html" class="hh-name">HH입니다</a>
+    <span class="hh-email">hehion@gmail.com</span>
+  </div>
+
+  <div class="hh-social-links">
+    <a href="https://youtube.com/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlB4TacRmM-lLGDYOUT0zGMlEG-l0RRbEC5wp8eNfCG7yA1pJznKXepQ0q8Kyb1WWTxGYQJ_-mWcfbsQZZOjd3k3vxlS0p5Q08FgM_7dEn7kLHWNhle-vG0IraKIrcGPnX-iC0jSiuEBnI-PkA-eVDv9DaWT-Vp5De5idSH2UCAUUMCjqPrFxAJU6LaA4/w200-h200/free-icon-play-10871272.png" alt="youtube" class="icon-lg-adj"></a>
+    <a href="https://www.instagram.com/hehion.c/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0HBAa_lUJNMHoM1ny-SvSs50Yf6NRzB_0iaKUuYQ6dl1Z3aJzPtdbKUsg7gwzjDm-QmErgdNOwDMdst3L6Iragp1Kbj3qmHTeO8027e8004qn4I6aufaVhbr2F3Ml04RbREyLgCAYHftegHmB22PYsVOS2PY1mSyATlHfAHkykfImt8cLW763WANKs3E/w200-h200/free-icon-instagram-1077042.png" alt="instagram" class="icon-sm-adj"></a>
+    <a href="https://www.facebook.com/hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJj5a46wvVXEJesvPE0PmXJiVPJ7mUdDovNJhFr5puIAAgkr57-BwmHxdzkQoFSkX2s4G9-SvypHeIRNpuI73nPJt4VdQ48WxWyNumn0qB9AUUClUkzwqQms7kAXJxO55RF3pDfR79EuWhmLrLZ6Jnd2A0gtGuekJ21m2DcfqZkXSQ0JBJ8Rctp-sjMo0/w199-h200/free-icon-facebook-1077041.png" alt="facebook" class="icon-sm-adj"></a>
+    <a href="https://twitter.com/hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWh3hHCJgzBelSQUAFsQxOXzgRhExWLEfaoTG47L5bH3kqiHPozO3MhpOf5MKAY-6lJQZR6KthdQD2xWBJSR2hjaaZo_R0Q0IOOnxfRusgB_faeah3WvV3-dVA0osMbLEiRQJa0GEUWSN18ww5x7WkAx_b7W1ovLTqnjfGLzCMPrPSUoqGcmYsKsx_gIY/w200-h200/sl_z_072523_61700_05.png" alt="x" class="icon-default"></a>
+    <a href="https://hehion.blogspot.com/p/blog-page_13.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJR-pUozdPG8MkOYjSvHua2W1G6CBLqL_9m5-PCiPAZa8cn5XZaLJUTmbEYGv-83cA0lcWFTmqYnXLshG4SmpcRdr1Th4c3567zKxYa-JZt9QfFQoa6uJnKPDniwdv9BJRAg5ExiJAbOzv_9C2zZHePye-7cANWJQuiAVnygJYhgGtu69WDTMLUfEXiqk/w200-h200/free-icon-kakao-talk-2111466.png" alt="kakao" class="icon-default"></a>
+    <a href="https://brunch.co.kr/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTKV7FiKVVCJWm2vEmDlzwRqrENGPefZr2GLUjkeT3kZTygSsvyhw959-emmV17sZ2rWwcLwPEZuGG98B4m4SMH8WfCcuDxx9hS9PZbxnKVj_EbcpafV5dfnCub3Iyhop8XVE4uNvE-9QgKgonDuUlSLL29nXPBUbc58pA2Arz2lx46cikKymOGkh8pMk/s320/zwv8-ymenlfEcYrfDRTpLYuQwfQ.jpg" alt="brunch" class="icon-default"></a>
+  </div>
+
+  <div class="hh-business">
+    <a href="https://kmong.com/search?type=gigs&keyword=%ec%97%90%ec%b9%98%ec%97%90%ec%b9%98" target="_blank">kmong</a>
+    <span class="divider">|</span>
+    <a href="https://soomgo.com/search/pro?sort=review_count&can_reserve=false&q=%ec%97%90%ec%b9%98%ec%97%90%ec%b9%98&is_promotion_target=false" target="_blank">soomgo</a>
+    <div class="hh-brand-name">"에치에치"</div>
+  </div>
+
+  <div class="hh-integrated-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+    ↑ TOP
+  </div>
 </div>
+
 <style>
-/* 기존 ZIZ 스타일 유지 */
+/* ZIZ & Flow 애니메이션 (기존 유지) */
 @keyframes ziz-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
 @keyframes ziz-color {
   0% { color: #e05a5a; } 16% { color: #e0a05a; } 33% { color: #a0c040; }
   50% { color: #40b0c0; } 66% { color: #7060e0; } 83% { color: #c050a0; } 100% { color: #e05a5a; }
 }
 .ziz-blink {
-  display: inline-block;
-  animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
-  font-weight: bold !important;
-  font-size: 2.5vmin !important;
-  text-decoration: none;
+  display: inline-block; animation: ziz-float 2s ease-in-out infinite, ziz-color 4s linear infinite;
+  font-weight: bold !important; font-size: 2.5vmin !important; text-decoration: none;
 }
-
-/* [최종 보정] 고발색 청색 및 광채 투명도 S자 흐름 [cite: 2026-04-07] */
 @keyframes s-wave-flow {
   0% { transform: perspective(100px) rotateY(0deg) translate(0, 0) scaleY(1); }
   25% { transform: perspective(100px) rotateY(10deg) translate(3px, -2px) scaleY(1.1); }
@@ -71,38 +91,66 @@
   75% { transform: perspective(100px) rotateY(-10deg) translate(3px, 2px) scaleY(1.1); }
   100% { transform: perspective(100px) rotateY(0deg) translate(0, 0) scaleY(1); }
 }
-
-@keyframes water-glow {
-  0%, 100% { color: rgba(0, 102, 204, 1); text-shadow: 0 0 0px transparent; } /* 선명한 로열 블루 */
-  50% { color: rgba(135, 206, 250, 0.4); text-shadow: 0 0 8px rgba(135, 206, 250, 0.8); } /* 투명하지만 밝게 빛나는 스카이 블루 [cite: 2026-04-07] */
-}
-
+@keyframes water-clear { 0%, 100% { color: rgba(0, 102, 204, 0.95); } 50% { color: rgba(0, 102, 204, 0.15); } }
 .water-flow {
-  display: inline-block;
-  animation: s-wave-flow 4.5s ease-in-out infinite, water-glow 5s ease-in-out infinite;
-  font-weight: bold !important;
-  font-size: 2.5vmin !important;
-  text-decoration: none;
-  transform-style: preserve-3d;
+  display: inline-block; animation: s-wave-flow 4.5s ease-in-out infinite, water-clear 5s ease-in-out infinite;
+  font-weight: bold !important; font-size: 2.5vmin !important; text-decoration: none; transform-style: preserve-3d;
 }
 
-  #hh-scroll-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    cursor: pointer;
-    z-index: 9999;
-    font-weight: bold;
-    font-size: 3.5vmin;
-    opacity: 0.3; 
-    transition: all 0.3s ease;
-    user-select: none;
-  }
-  #hh-scroll-top:hover {
-    opacity: 1;
-    color: #5e8ab4;
-    transform: translateY(-3px);
-  }
+/* [보정] 반투명 시공이 적용된 통합 카드 스타일 [cite: 2026-04-08] */
+.hh-contact-card {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  /* 배경 반투명화 + 본문 내용 희미하게 보이게 블러 처리 [cite: 2026-04-08] */
+  background-color: rgba(238, 238, 238, 0.45); 
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px);
+  
+  border-radius: 12px;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  z-index: 9999;
+  width: fit-content; /* 내용물 최적화 폭 [cite: 2026-04-08] */
+  min-width: 140px;
+  overflow: hidden;
+}
+
+.hh-identity { padding: 15px 15px 8px 15px; }
+.hh-name {
+  display: block; font-size: 2.2vmin; font-weight: 900; color: #000;
+  text-decoration: none; margin-bottom: 2px; transition: transform 0.3s ease-in-out;
+}
+.hh-name:hover { transform: scale(1.1) translateY(-3px); }
+.hh-email { font-size: 1.5vmin; color: #666; }
+
+.hh-social-links { display: flex; justify-content: center; align-items: center; gap: 5px; padding: 0 15px 12px 15px; }
+.hh-social-links img { height: auto; object-fit: contain; transition: all 0.2s ease; filter: grayscale(100%); opacity: 0.7; }
+.hh-social-links img.icon-lg-adj { width: 22px; }
+.hh-social-links img.icon-default { width: 17.5px; }
+.hh-social-links img.icon-sm-adj { width: 15px; }
+.hh-social-links a:hover img { transform: scale(1.3); filter: grayscale(0%); opacity: 1; }
+
+.hh-business { font-size: 1.6vmin; color: #555; padding: 10px 15px; border-top: 1px solid rgba(0,0,0,0.08); }
+.hh-business a { color: #2288bb; text-decoration: none; font-weight: bold; }
+.divider { margin: 0 5px; color: #ccc; }
+.hh-brand-name { margin-top: 4px; font-size: 1.3vmin; color: #999; }
+
+/* [보정] 배경 농도 50% 완화 및 글씨 확대된 TOP 영역 [cite: 2026-04-08] */
+.hh-integrated-top {
+  /* 배경색 농도를 절반으로 줄여 반투명 느낌 강조 [cite: 2026-04-08] */
+  background-color: rgba(34, 34, 34, 0.5); 
+  color: #fff;            
+  font-size: 2.2vmin;    /* 글씨 크기 확대 [cite: 2026-04-08] */
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+.hh-integrated-top:hover { background-color: rgba(0, 0, 0, 0.75); letter-spacing: 1px; }
 </style>
 `;
 
