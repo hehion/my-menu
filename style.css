@@ -17,12 +17,12 @@ h3.post-title, h3.post-title a {
     text-decoration: none !important;
 }
 
-/* 4. 날짜 표시 및 가젯 타이틀 통합 규격 (큰 스케일인 2.1vmin으로 통일) */
-h2.date-header, 
-div.widget h2.title {
-    font-size: 2.1vmin !important; /* 위젯 타이틀 기준인 2.1vmin으로 일치 */
-    color: #666666 !important;
-    font-weight: bold !important;
+/* 4. 날짜 및 가젯 타이틀 (6px 라운딩) */
+h2.date-header, div.widget h2.title { font-size: 2.1vmin !important; color: #666666 !important; font-weight: bold !important; }
+h2.date-header span {
+    background-color: rgba(102, 102, 102, 0.5) !important; color: #ffffff !important;
+    border-radius: 6px !important; padding: 3px 12px !important; display: inline-block !important;
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
 }
 
 /* 날짜 박스 디테일 (기존에 협의한 50% 농도 및 라운딩 유지) */
@@ -92,4 +92,86 @@ width: 210px; !important;
 .main-inner .column-right-outer {
 width: 210px; !important;
 margin-right: -210px; !important;
+}
+
+/* 8. 문의 양식 및 검색 가젯 통합 시공 (가변형 입력창 설계) */
+
+/* 입력창 외부 라벨 은폐 */
+.contact-form-name-label, .contact-form-email-label, .contact-form-email-message-label { display: none !important; }
+
+/* 모든 입력창 통합 스타일 (6px 라운딩) */
+input.contact-form-name, input.contact-form-email, 
+textarea.contact-form-email-message {
+    background-color: rgba(238, 238, 238, 0.45) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-radius: 6px !important;
+    padding: 8px 10px !important; font-size: 15px !important; color: #333 !important;
+    backdrop-filter: blur(4px); width: 100% !important; box-sizing: border-box !important;
+    margin-bottom: 10px !important;
+}
+
+/* [재시공] 검색 가젯: 버튼 고정(60px) + 입력창 가변(100%) 설계 */
+.BlogSearch .gsc-search-box {
+    width: 100% !important; /* 사이드바 폭(210px)을 기준으로 100% 사용 */
+    margin-bottom: 15px !important;
+}
+
+.BlogSearch table.gsc-search-box {
+    display: flex !important;
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+.BlogSearch tbody, .BlogSearch tr {
+    display: flex !important;
+    width: 100% !important;
+    align-items: flex-end !important; /* 아랫 라인 일직선 정렬 */
+}
+
+/* [가변 시공] 입력창 셀 */
+.BlogSearch td.gsc-input {
+    flex: 1 !important; /* 버튼(60px)과 간격(6px)을 제외한 나머지 공간을 100% 점유 */
+    padding-right: 6px !important; /* 버튼과의 정교한 간격 */
+}
+
+/* [고정 시공] 검색 버튼 셀 */
+.BlogSearch td.gsc-search-button {
+    flex: 0 0 60px !important; /* 버튼 폭은 60px로 절대 고정 */
+}
+
+/* 검색 입력창 내부 미세 조정 */
+.BlogSearch input.gsc-input {
+    background-color: rgba(238, 238, 238, 0.45) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-radius: 6px !important;
+    padding: 6px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: 32px !important;
+    margin: 0 !important;
+}
+
+/* 버튼 스타일 통일 */
+.BlogSearch button.gsc-search-button,
+.BlogSearch input.gsc-search-button,
+input.contact-form-button-submit {
+    background-color: rgba(0, 102, 204, 0.6) !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    border: none !important;
+    width: 60px !important; /* 버튼 폭 고정 */
+    height: 32px !important;
+    line-height: 32px !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 보내기 버튼만 우측 정렬 유지 (폭은 자율) */
+input.contact-form-button-submit {
+    width: auto !important;
+    padding: 0 15px !important;
+    float: right !important;
 }
