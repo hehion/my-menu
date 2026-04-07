@@ -97,34 +97,38 @@
   font-weight: bold !important; font-size: 2.5vmin !important; text-decoration: none; transform-style: preserve-3d;
 }
 
-/* [보정] 반투명 시공이 적용된 통합 카드 스타일 [cite: 2026-04-08] */
+/* [보정] 서체 설정을 삭제하고 시스템 서체를 따르는 통합 카드 [cite: 2026-04-08] */
 .hh-contact-card {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  /* 배경 반투명화 + 본문 내용 희미하게 보이게 블러 처리 [cite: 2026-04-08] */
   background-color: rgba(238, 238, 238, 0.45); 
   backdrop-filter: blur(5px); 
   -webkit-backdrop-filter: blur(5px);
-  
   border-radius: 12px;
   padding: 0;
   text-align: center;
-  font-family: sans-serif;
+  /* font-family 설정 삭제 [cite: 2026-04-08] */
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   z-index: 9999;
-  width: fit-content; /* 내용물 최적화 폭 [cite: 2026-04-08] */
+  width: fit-content; 
   min-width: 140px;
   overflow: hidden;
+  line-height: 1.4; /* 가독성을 위한 줄간격 보정 */
 }
 
 .hh-identity { padding: 15px 15px 8px 15px; }
 .hh-name {
-  display: block; font-size: 2.2vmin; font-weight: 900; color: #000;
-  text-decoration: none; margin-bottom: 2px; transition: transform 0.3s ease-in-out;
+  display: block; 
+  font-size: 18px; /* 깨짐 방지를 위해 고정 단위(px)와 상대 단위의 적절한 조합 고려 [cite: 2026-04-08] */
+  font-weight: 900; 
+  color: #000;
+  text-decoration: none; 
+  margin-bottom: 2px; 
+  transition: transform 0.3s ease-in-out;
 }
 .hh-name:hover { transform: scale(1.1) translateY(-3px); }
-.hh-email { font-size: 1.5vmin; color: #666; }
+.hh-email { font-size: 12px; color: #666; }
 
 .hh-social-links { display: flex; justify-content: center; align-items: center; gap: 5px; padding: 0 15px 12px 15px; }
 .hh-social-links img { height: auto; object-fit: contain; transition: all 0.2s ease; filter: grayscale(100%); opacity: 0.7; }
@@ -133,17 +137,15 @@
 .hh-social-links img.icon-sm-adj { width: 15px; }
 .hh-social-links a:hover img { transform: scale(1.3); filter: grayscale(0%); opacity: 1; }
 
-.hh-business { font-size: 1.6vmin; color: #555; padding: 10px 15px; border-top: 1px solid rgba(0,0,0,0.08); }
+.hh-business { font-size: 13px; color: #555; padding: 10px 15px; border-top: 1px solid rgba(0,0,0,0.08); }
 .hh-business a { color: #2288bb; text-decoration: none; font-weight: bold; }
 .divider { margin: 0 5px; color: #ccc; }
-.hh-brand-name { margin-top: 4px; font-size: 1.3vmin; color: #999; }
+.hh-brand-name { margin-top: 4px; font-size: 11px; color: #999; }
 
-/* [보정] 배경 농도 50% 완화 및 글씨 확대된 TOP 영역 [cite: 2026-04-08] */
 .hh-integrated-top {
-  /* 배경색 농도를 절반으로 줄여 반투명 느낌 강조 [cite: 2026-04-08] */
   background-color: rgba(34, 34, 34, 0.5); 
   color: #fff;            
-  font-size: 2.2vmin;    /* 글씨 크기 확대 [cite: 2026-04-08] */
+  font-size: 15px;    
   font-weight: bold;
   padding: 10px 0;
   cursor: pointer;
