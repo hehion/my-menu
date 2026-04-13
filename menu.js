@@ -52,15 +52,18 @@
     <span class="hh-email">hehion@gmail.com</span>
   </div>
 
-  <div class="hh-social-links">
+  <div class="hh-social-links" style="padding-bottom: 5px;">
     <a href="https://youtube.com/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlB4TacRmM-lLGDYOUT0zGMlEG-l0RRbEC5wp8eNfCG7yA1pJznKXepQ0q8Kyb1WWTxGYQJ_-mWcfbsQZZOjd3k3vxlS0p5Q08FgM_7dEn7kLHWNhle-vG0IraKIrcGPnX-iC0jSiuEBnI-PkA-eVDv9DaWT-Vp5De5idSH2UCAUUMCjqPrFxAJU6LaA4/w200-h200/free-icon-play-10871272.png" alt="youtube" class="icon-lg-adj"></a>
     <a href="https://www.instagram.com/hehion.c/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0HBAa_lUJNMHoM1ny-SvSs50Yf6NRzB_0iaKUuYQ6dl1Z3aJzPtdbKUsg7gwzjDm-QmErgdNOwDMdst3L6Iragp1Kbj3qmHTeO8027e8004qn4I6aufaVhbr2F3Ml04RbREyLgCAYHftegHmB22PYsVOS2PY1mSyATlHfAHkykfImt8cLW763WANKs3E/w200-h200/free-icon-instagram-1077042.png" alt="instagram" class="icon-sm-adj"></a>
     <a href="https://www.facebook.com/hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJj5a46wvVXEJesvPE0PmXJiVPJ7mUdDovNJhFr5puIAAgkr57-BwmHxdzkQoFSkX2s4G9-SvypHeIRNpuI73nPJt4VdQ48WxWyNumn0qB9AUUClUkzwqQms7kAXJxO55RF3pDfR79EuWhmLrLZ6Jnd2A0gtGuekJ21m2DcfqZkXSQ0JBJ8Rctp-sjMo0/w199-h200/free-icon-facebook-1077041.png" alt="facebook" class="icon-sm-adj"></a>
     <a href="https://twitter.com/hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWh3hHCJgzBelSQUAFsQxOXzgRhExWLEfaoTG47L5bH3kqiHPozO3MhpOf5MKAY-6lJQZR6KthdQD2xWBJSR2hjaaZo_R0Q0IOOnxfRusgB_faeah3WvV3-dVA0osMbLEiRQJa0GEUWSN18ww5x7WkAx_b7W1ovLTqnjfGLzCMPrPSUoqGcmYsKsx_gIY/w200-h200/sl_z_072523_61700_05.png" alt="x" class="icon-default"></a>
     <a href="https://hehion.blogspot.com/p/blog-page_13.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJR-pUozdPG8MkOYjSvHua2W1G6CBLqL_9m5-PCiPAZa8cn5XZaLJUTmbEYGv-83cA0lcWFTmqYnXLshG4SmpcRdr1Th4c3567zKxYa-JZt9QfFQoa6uJnKPDniwdv9BJRAg5ExiJAbOzv_9C2zZHePye-7cANWJQuiAVnygJYhgGtu69WDTMLUfEXiqk/w200-h200/free-icon-kakao-talk-2111466.png" alt="kakao" class="icon-default"></a>
+  </div>
+  <div class="hh-social-links" style="padding-top: 0; padding-bottom: 12px;">
     <a href="https://brunch.co.kr/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTKV7FiKVVCJWm2vEmDlzwRqrENGPefZr2GLUjkeT3kZTygSsvyhw959-emmV17sZ2rWwcLwPEZuGG98B4m4SMH8WfCcuDxx9hS9PZbxnKVj_EbcpafV5dfnCub3Iyhop8XVE4uNvE-9QgKgonDuUlSLL29nXPBUbc58pA2Arz2lx46cikKymOGkh8pMk/s320/zwv8-ymenlfEcYrfDRTpLYuQwfQ.jpg" alt="brunch" class="icon-default"></a>
     <a href="https://smartstore.naver.com/hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP7hbViO0195C-Ur5u9aOErxK7_seKLEFHv6htcmJD6Y4oZflgvW0Pd4ccnhXjy-69UgMbdbES7B0Wxk6jsjNpx8rjb7icn9PW7VVgSfGoxehvpjNPPujp81NmboIYwzOYfoi8x0viuQR-D2dfWsY0dS81U4p8b9IuzOU6FFlbFmAFkvu8rAcGPv2F4dk/s1600/smartstore.png" alt="smartstore" class="icon-default"></a>
-    <a href="https://www.tiktok.com/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgikhhEX255bDr60DDiyaRUzlRksOOEC3SV9btjM7x-rTHg5EjlEf_s_7gKKHz3XXEb2k1MhsvIMpJdkXs2q-oEwdN2bl04oMdtXdj8PPV943iHe84haxmyRQulxRzk3p3svHC3Gxm0Av4VFAtcG_Fh468jLwa_uSNzJk8R0fmyv1a_FQx1p8PqZDcwu8k/s320/tictok.png alt="smartstore" class="icon-default"></a>
+    <a href="https://www.tiktok.com/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgikhhEX255bDr60DDiyaRUzlRksOOEC3SV9btjM7x-rTHg5EjlEf_s_7gKKHz3XXEb2k1MhsvIMpJdkXs2q-oEwdN2bl04oMdtXdj8PPV943iHe84haxmyRQulxRzk3p3svHC3Gxm0Av4VFAtcG_Fh468jLwa_uSNzJk8R0fmyv1a_FQx1p8PqZDcwu8k/s320/tictok.png" alt="smartstore" class="icon-default"></a>
+    <a href="https://www.threads.com/@hehion.c" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqfsGOi7NXv0Jyld5_W3DdI8Y2tzdziZ-m-PuU9gSMts8qz_EI04JvN6R7vnw3j08dGjd1LxyvhN6ofvTpHeNHTRPoOLGeQzyxHLYVueOqwcoe7op9EmmioY-hEotMLRiwgt94YViwdtjC7Alb7Wr8Vd9Bu_JRg8E764cla1ZlxMmEiMGibaLawZa0ey4/s320/threads.png" alt="threads" class="icon-default"></a>
   </div>
 
   <div class="hh-business">
@@ -132,7 +135,7 @@
 .hh-name:hover { transform: scale(1.1) translateY(-3px); }
 .hh-email { font-size: 12px; color: #666; }
 
-.hh-social-links { display: flex; justify-content: center; align-items: center; gap: 5px; padding: 0 15px 12px 15px; }
+.hh-social-links { display: flex; justify-content: center; align-items: center; gap: 5px; padding: 0 15px 12px 15px; flex-wrap: wrap; }
 .hh-social-links img { height: auto; object-fit: contain; transition: all 0.2s ease; filter: grayscale(100%); opacity: 0.7; }
 .hh-social-links img.icon-lg-adj { width: 22px; }
 .hh-social-links img.icon-default { width: 17.5px; }
@@ -146,7 +149,7 @@
 
 .hh-integrated-top {
   background-color: rgba(34, 34, 34, 0.5); 
-  color: #fff;            
+  color: #fff;             
   font-size: 15px;    
   font-weight: bold;
   padding: 10px 0;
