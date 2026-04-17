@@ -248,7 +248,7 @@
       { label: "'s yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
       { label: "'s tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
       { label: "'s \u2605",        url: 'https://hhfavorite.blogspot.com' },
-      { label: "'test0",        url: 'https://hh-test0.blogspot.com' },
+      { label: "test0",        url: 'https://hh-test0.blogspot.com' },
     ]},
   ];
 
