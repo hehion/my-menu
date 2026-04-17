@@ -214,7 +214,8 @@
 
   var GROUPS = [
     { name: 'HH',   cx: zHH.cx,   cy: zHH.cy,   sx: zHH.sx,   sy: zHH.sy,   nodes: [
-      { label: 'home',             url: 'https://hehion.blogspot.com' },
+      { label: 'gate',             url: 'https://hehion.blogspot.com' },
+      { label: 'main',             url: 'https://hhcenter.blogspot.com' },
       { label: '가라!종이비행기',  url: 'https://hhcenter.blogspot.com/p/flytothe.html' },
       { label: 'hh',               url: 'https://hhcenter.blogspot.com/p/i.html' },
       { label: 'scrap',            url: 'https://hhscrap.blogspot.com' },
