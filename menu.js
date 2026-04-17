@@ -180,7 +180,7 @@
       { label: '..inCS',           url: 'https://hhincs.blogspot.com/2018/06/20185.html' },
     ]},
     { name: 'DO',   cx: zDO.cx,   cy: zDO.cy,   sx: zDO.sx,   sy: zDO.sy,   nodes: [
-      { label: 'ReadwRite',        url: 'https://hhreadwrite.blogspot.com' },
+      { label: 'Read&wRite',        url: 'https://hhreadwrite.blogspot.com' },
       { label: 'Chef!',            url: 'https://hhchef.blogspot.com' },
       { label: 'Movement',         url: 'https://hh-movement.blogspot.com' },
       { label: 'Language',         url: 'https://hhlanguage.blogspot.com' },
@@ -192,6 +192,7 @@
     { name: 'FLOW', cx: zFLOW.cx, cy: zFLOW.cy, sx: zFLOW.sx, sy: zFLOW.sy, nodes: [
       { label: 'ZIZ',              url: 'https://hh-hub.blogspot.com' },
       { label: 'flow',             url: 'https://hhflowmap.blogspot.com/2026/04/flow-map.html' },
+      { label: 'Learn!Run!',             url: 'https://hhlearnrun.blogspot.com' },
       { label: 'AloneorTogether',  url: 'https://hhaloneortogether.blogspot.com/p/contents.html' },
     ]},
     { name: '', hidden: true, cx: zHIDN.cx, cy: zHIDN.cy, sx: zHIDN.sx, sy: zHIDN.sy, nodes: [
