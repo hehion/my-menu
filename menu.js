@@ -214,16 +214,16 @@
 
   var GROUPS = [
     { name: 'HH',   cx: zHH.cx,   cy: zHH.cy,   sx: zHH.sx,   sy: zHH.sy,   nodes: [
-      { label: 'home',             url: 'https://hehion.blogspot.com/' },
+      { label: 'home',             url: 'https://hehion.blogspot.com' },
       { label: '가라!종이비행기',  url: 'https://hhcenter.blogspot.com/p/flytothe.html' },
       { label: 'hh',               url: 'https://hhcenter.blogspot.com/p/i.html' },
-      { label: 'scrap',            url: 'https://hhscrap.blogspot.com/' },
+      { label: 'scrap',            url: 'https://hhscrap.blogspot.com' },
     ]},
     { name: 'ARCH', cx: zARCH.cx, cy: zARCH.cy, sx: zARCH.sx, sy: zARCH.sy, nodes: [
       { label: 'archDesign',       url: 'https://hharchdesign.blogspot.com' },
       { label: 'archLesson',       url: 'https://hharchlesson.blogspot.com' },
       { label: 'archStudy',        url: 'https://hharchstudy.blogspot.com' },
-      { label: 'archUG',           url: 'https://hharchug.blogspot.com/' },
+      { label: 'archUG',           url: 'https://hharchug.blogspot.com' },
       { label: '..inNC',           url: 'https://hhinnc.blogspot.com' },
       { label: '..inCS',           url: 'https://hhincs.blogspot.com/2018/06/20185.html' },
     ]},
@@ -239,16 +239,16 @@
     ]},
     { name: 'FLOW', cx: zFLOW.cx, cy: zFLOW.cy, sx: zFLOW.sx, sy: zFLOW.sy, nodes: [
       { label: 'ZIZ',              url: 'https://hh-hub.blogspot.com' },
-      { label: 'flow',             url: 'https://hhflowmap.blogspot.com/2026/04/flow-map.html' },
+      { label: 'flow',             url: 'https://hhflowmap.blogspot.com' },
       { label: 'Learn!Run!',       url: 'https://hhlearnrun.blogspot.com' },
-      { label: 'Alone/Together',   url: 'https://hhaloneortogether.blogspot.com/p/contents.html' },
+      { label: 'Alone/Together',   url: 'https://hhaloneortogether.blogspot.com' },
     ]},
     { name: '', hidden: true, cx: zHIDN.cx, cy: zHIDN.cy, sx: zHIDN.sx, sy: zHIDN.sy, nodes: [
-      { label: "'s today",         url: 'https://hhtoday.blogspot.com/' },
+      { label: "'s today",         url: 'https://hhtoday.blogspot.com' },
       { label: "'s yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
       { label: "'s tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
-      { label: "'s \u2605",        url: 'https://hhfavorite.blogspot.com/' },
-      { label: "'test0",        url: 'https://hh-test0.blogspot.com/' },
+      { label: "'s \u2605",        url: 'https://hhfavorite.blogspot.com' },
+      { label: "'test0",        url: 'https://hh-test0.blogspot.com' },
     ]},
   ];
 
