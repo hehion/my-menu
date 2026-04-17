@@ -153,7 +153,7 @@
   <div class="hh-pill-item hh-star-node" data-group="0" style="--float-y: -4px; --float-dur: 3s;">HH</div>
   <div class="hh-pill-item hh-star-node" data-group="1" style="--float-y: 3px; --float-dur: 3.5s;">ARCH</div>
   <div class="hh-pill-item hh-star-node" data-group="2" style="--float-y: -5px; --float-dur: 4s;">DO</div>
-  <div class="hh-pill-item hh-star-node" data-group="3" style="--float-y: 2px; --float-dur: 3.2s;">FLOW</div>
+  <div class="hh-pill-item hh-star-node" data-group="3" style="--float-y: 2px; --float-dur: 3.2s;">WAY</div>
   
   <div class="hh-pill-sep"></div>
   <div class="hh-pill-item hh-star-node hh-pill-feel-btn" id="hhPillFeelBtn" style="--float-y: 4px; --float-dur: 2.8s;">FEEL</div>
@@ -209,7 +209,7 @@
   var zHH   = ZONES[zoneOrder[0]];
   var zARCH = ZONES[zoneOrder[1]];
   var zDO   = ZONES[2];
-  var zFLOW = ZONES[zoneOrder[2]];
+  var zWAY = ZONES[zoneOrder[2]];
   var zHIDN = ZONES[zoneOrder[3]];
 
   var GROUPS = [
@@ -237,7 +237,7 @@
       { label: 'Coding',           url: 'https://hhcoding.blogspot.com' },
       { label: 'MathScience',      url: 'https://hhmathscience.blogspot.com' },
     ]},
-    { name: 'FLOW', cx: zFLOW.cx, cy: zFLOW.cy, sx: zFLOW.sx, sy: zFLOW.sy, nodes: [
+    { name: 'WAY', cx: zWAY.cx, cy: zWAY.cy, sx: zWAY.sx, sy: zWAY.sy, nodes: [
       { label: 'ZIZ',              url: 'https://hh-hub.blogspot.com' },
       { label: 'flow',             url: 'https://hhflowmap.blogspot.com' },
       { label: 'Learn!Run!',       url: 'https://hhlearnrun.blogspot.com' },
