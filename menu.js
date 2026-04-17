@@ -1,3 +1,6 @@
+(function() {
+  const menuHTML = `
+
 <style>
 /* ── 캔버스 오버레이 ── */
 #hhMenuCanvas {
@@ -594,3 +597,9 @@
   setTimeout(init, 0);
 })();
 </script>
+
+`;
+
+  document.write(menuHTML);
+  document.write('<style>.title, h1.title, .header-outer, #header-outer, #header, .header, .header-inner, #header-inner { display: none !important; }</style>');
+})();
