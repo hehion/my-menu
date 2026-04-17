@@ -1,8 +1,8 @@
 (function() {
   const menuHTML = `
 <div align="left" style="font-size: 2.5vmin;">
-<a href="https://hehion.blogspot.com/p/flytothe.html"><b>가라!종이비행기</b></a>
-　<a href="https://hehion.blogspot.com/p/i.html"><b>hh</b></a>
+<a href="https://hhcenter.blogspot.com/p/flytothe.html"><b>가라!종이비행기</b></a>
+　<a href="https://hhcenter.blogspot.com/p/i.html"><b>hh</b></a>
 　<a href="https://hhtoday.blogspot.kr/" style="font-size: 2.5vmin;"><font color="fafafa">'s today</font></a>
 　<a href="https://hhyesterday.blogspot.kr/p/20130728.html" style="font-size: 2.5vmin;"><font color="fafafa">'s yesterday</font></a>
 　<a href="https://hhtomorrow.blogspot.com" style="font-size: 2.5vmin;"><font color="fafafa">'s tomorrow</font></a>
@@ -26,7 +26,7 @@
 
 <div align="right" style="font-size: 2.5vmin;">
 　<a href="https://hhaloneortogether.blogspot.com/p/contents.html">Alone<font style="font-size: 1.8vmin;">or</font>Together</a>
-　<a href="https://hhlearnrun.blogspot.com">Learn!Run!</a>
+　<a href="https://hhreadwrite.blogspot.com">R<font style="font-size: 1.8vmin;">ead&w</font>R<font style="font-size: 1.8vmin;">ite</font></a>
 　<a href="https://hhchef.blogspot.com">Chef!</a>
 　<a href="https://hh-movement.blogspot.com">Move<font style="font-size: 1.8vmin;">ment</font></a>
 　<a href="https://hhlanguage.blogspot.com">L<font style="font-size: 1.8vmin;">anguage</font></a>
