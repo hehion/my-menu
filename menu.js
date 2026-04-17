@@ -225,7 +225,7 @@
       { label: 'archStudy',        url: 'https://hharchstudy.blogspot.com' },
       { label: 'archUG',           url: 'https://hharchug.blogspot.com' },
       { label: '..inNC',           url: 'https://hhinnc.blogspot.com' },
-      { label: '..inCS',           url: 'https://hhincs.blogspot.com/2018/06/20185.html' },
+      { label: '..inCS',           url: 'https://hhincs.blogspot.com' },
     ]},
     { name: 'DO',   cx: zDO.cx,   cy: zDO.cy,   sx: zDO.sx,   sy: zDO.sy,   nodes: [
       { label: 'Read&wRite',        url: 'https://hhreadwrite.blogspot.com' },
