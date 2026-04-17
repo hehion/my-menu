@@ -1,48 +1,4 @@
 <style>
-/* ── 트리거 버튼 ── */
-@keyframes hhBtnPulse {
-  0%   { box-shadow: 0 0 8px 2px rgba(200,188,140,0.18), 0 0 0px 0px rgba(200,188,140,0); }
-  50%  { box-shadow: 0 0 18px 8px rgba(200,188,140,0.38), 0 0 38px 18px rgba(200,188,140,0.10); }
-  100% { box-shadow: 0 0 8px 2px rgba(200,188,140,0.18), 0 0 0px 0px rgba(200,188,140,0); }
-}
-@keyframes hhBtnPulseOpen {
-  0%   { box-shadow: 0 0 12px 4px rgba(255,240,180,0.35), 0 0 0px 0px rgba(255,220,120,0); }
-  50%  { box-shadow: 0 0 28px 14px rgba(255,240,180,0.55), 0 0 55px 28px rgba(255,220,120,0.18); }
-  100% { box-shadow: 0 0 12px 4px rgba(255,240,180,0.35), 0 0 0px 0px rgba(255,220,120,0); }
-}
-.hh-star-btn {
-  position: fixed;
-  top: 14px;
-  left: 14px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(26,26,24,0.75);
-  cursor: pointer;
-  z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 8px 2px rgba(200,188,140,0.18);
-  transition: background 0.25s, transform 0.2s;
-  user-select: none;
-  animation: hhBtnPulse 2.8s ease-in-out infinite;
-}
-.hh-star-btn:hover { background: rgba(26,26,24,0.9); transform: scale(1.1); }
-.hh-star-btn.open { animation: hhBtnPulseOpen 1.8s ease-in-out infinite; }
-.hh-star-btn-text {
-  font-size: 11px;
-  color: rgba(230,224,210,0.85);
-  letter-spacing: 0.06em;
-  text-transform: lowercase;
-  line-height: 1;
-  transition: color 0.3s ease;
-  pointer-events: none;
-  text-align: center;
-  white-space: nowrap;
-}
-.hh-star-btn.open .hh-star-btn-text { color: #fff8ee; }
-
 /* ── 캔버스 오버레이 ── */
 #hhMenuCanvas {
   position: fixed;
@@ -200,10 +156,6 @@
   <div class="hh-pill-item hh-star-node hh-pill-feel-btn" id="hhPillFeelBtn" style="--float-y: 4px; --float-dur: 2.8s;">FEEL</div>
 </div>
 
-<div class="hh-star-btn" id="hhStarBtn" style="display:none;">
-  <span class="hh-star-btn-text">menu</span>
-</div>
-
 <div class="hh-contact-card">
   <div class="hh-identity">
     <a href="https://hehion.blogspot.com/p/hh.html" class="hh-name">HH입니다</a>
@@ -219,7 +171,7 @@
   <div class="hh-social-links" style="padding-top:0; padding-bottom:12px;">
     <a href="https://brunch.co.kr/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTKV7FiKVVCJWm2vEmDlzwRqrENGPefZr2GLUjkeT3kZTygSsvyhw959-emmV17sZ2rWwcLwPEZuGG98B4m4SMH8WfCcuDxx9hS9PZbxnKVj_EbcpafV5dfnCub3Iyhop8XVE4uNvE-9QgKgonDuUlSLL29nXPBUbc58pA2Arz2lx46cikKymOGkh8pMk/s320/zwv8-ymenlfEcYrfDRTpLYuQwfQ.jpg" alt="brunch" class="icon-default"></a>
     <a href="https://smartstore.naver.com/hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP7hbViO0195C-Ur5u9aOErxK7_seKLEFHv6htcmJD6Y4oZflgvW0Pd4ccnhXjy-69UgMbdbES7B0Wxk6jsjNpx8rjb7icn9PW7VVgSfGoxehvpjNPPujp81NmboIYwzOYfoi8x0viuQR-D2dfWsY0dS81U4p8b9IuzOU6FFlbFmAFkvu8rAcGPv2F4dk/s1600/smartstore.png" alt="smartstore" class="icon-default"></a>
-    <a href="https://www.tiktok.com/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgikhhEX255bDr60DDiyaRUzlRksOOEC3SV9btjM7x-rTHg5EjlEf_s_7gKKHz3XXEb2k1MhsvIMpJdkXs2q-oEwdN2bl04oMdtXdj8PPV943iHe84haxmyRQulxRzk3p3svHC3Gxm0Av4VFAtcG_Fh468jLwa_uSNzJk8R0fmyv1a_FQx1p8PqZDcwu8k/s320/tictok.png" alt="smartstore" class="icon-default"></a>
+    <a href="https://www.tiktok.com/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgikhhEX255bDr60DDiyaRUzlRksOOEC3SV9btjM7x-rTHg5EjlEf_s_7gKKHz3XXEb2k1MhsvIMpJdkXs2q-oEwdN2bl04oMdtXdj8PPV943iHe84haxmyRQulxRzk3p3svHC3Gxm0Av4VFAtcG_Fh468jLwa_uSNzJk8R0fmyv1a_FQx1p8PqZDcwu8k/s320/tictok.png" alt="tiktok" class="icon-default"></a>
     <a href="https://www.threads.com/@hehion.c" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqfsGOi7NXv0Jyld5_W3DdI8Y2tzdziZ-m-PuU9gSMts8qz_EI04JvN6R7vnw3j08dGjd1LxyvhN6ofvTpHeNHTRPoOLGeQzyxHLYVueOqwcoe7op9EmmioY-hEotMLRiwgt94YViwdtjC7Alb7Wr8Vd9Bu_JRg8E764cla1ZlxMmEiMGibaLawZa0ey4/s320/threads.png" alt="threads" class="icon-default"></a>
   </div>
   <div class="hh-business">
@@ -240,7 +192,17 @@
     { cx: 0.86, cy: 0.22, sx: 0.07, sy: 0.09 },
     { cx: 0.86, cy: 0.74, sx: 0.07, sy: 0.09 },
   ];
-  var zoneOrder = [0,1,3,4].sort(function(){ return Math.random()-0.5; });
+
+  /* Fisher-Yates 셔플 */
+  function shuffle(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+    }
+    return arr;
+  }
+
+  var zoneOrder = shuffle([0,1,3,4]);
   var zHH   = ZONES[zoneOrder[0]];
   var zARCH = ZONES[zoneOrder[1]];
   var zDO   = ZONES[2];
@@ -252,14 +214,14 @@
       { label: 'home',             url: 'https://hehion.blogspot.com/' },
       { label: '가라!종이비행기',  url: 'https://hhcenter.blogspot.com/p/flytothe.html' },
       { label: 'hh',               url: 'https://hhcenter.blogspot.com/p/i.html' },
-      { label: 'scrap',            url: 'https://hhscrap.blogspot.kr/' },
+      { label: 'scrap',            url: 'https://hhscrap.blogspot.com/' },
     ]},
     { name: 'ARCH', cx: zARCH.cx, cy: zARCH.cy, sx: zARCH.sx, sy: zARCH.sy, nodes: [
       { label: 'archDesign',       url: 'https://hharchdesign.blogspot.com' },
       { label: 'archLesson',       url: 'https://hharchlesson.blogspot.com' },
       { label: 'archStudy',        url: 'https://hharchstudy.blogspot.com' },
-      { label: 'archUG',           url: 'https://hharchug.blogspot.kr/' },
-      { label: '..inNC',           url: 'https://hhinnc.blogspot.kr' },
+      { label: 'archUG',           url: 'https://hharchug.blogspot.com/' },
+      { label: '..inNC',           url: 'https://hhinnc.blogspot.com' },
       { label: '..inCS',           url: 'https://hhincs.blogspot.com/2018/06/20185.html' },
     ]},
     { name: 'DO',   cx: zDO.cx,   cy: zDO.cy,   sx: zDO.sx,   sy: zDO.sy,   nodes: [
@@ -275,16 +237,17 @@
     { name: 'FLOW', cx: zFLOW.cx, cy: zFLOW.cy, sx: zFLOW.sx, sy: zFLOW.sy, nodes: [
       { label: 'ZIZ',              url: 'https://hh-hub.blogspot.com' },
       { label: 'flow',             url: 'https://hhflowmap.blogspot.com/2026/04/flow-map.html' },
-      { label: 'Learn!Run!',             url: 'https://hhlearnrun.blogspot.com' },
-      { label: 'Alone/Together',  url: 'https://hhaloneortogether.blogspot.com/p/contents.html' },
+      { label: 'Learn!Run!',       url: 'https://hhlearnrun.blogspot.com' },
+      { label: 'Alone/Together',   url: 'https://hhaloneortogether.blogspot.com/p/contents.html' },
     ]},
     { name: '', hidden: true, cx: zHIDN.cx, cy: zHIDN.cy, sx: zHIDN.sx, sy: zHIDN.sy, nodes: [
-      { label: "'s today",         url: 'https://hhtoday.blogspot.kr/' },
-      { label: "'s yesterday",     url: 'https://hhyesterday.blogspot.kr/p/20130728.html' },
+      { label: "'s today",         url: 'https://hhtoday.blogspot.com/' },
+      { label: "'s yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
       { label: "'s tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
-      { label: "'s \u2605",       url: 'https://hhfavorite.blogspot.kr/' },
+      { label: "'s \u2605",        url: 'https://hhfavorite.blogspot.com/' },
     ]},
   ];
+
   var ALL_CONSTELLATIONS = [
     [[0.0,0.2],[-0.5,-0.1],[-0.85,-0.0],[0.55,0.6]],
     [[0.0,-0.8],[0.4,-0.4],[-0.4,-0.4],[0.7,0.1],[-0.7,0.2],[0.0,0.7]],
@@ -300,7 +263,7 @@
     [[-0.7,-0.3],[-0.1,0.4],[0.5,-0.5],[0.7,0.4]],
   ];
 
-  var shuffled = ALL_CONSTELLATIONS.slice().sort(function(){ return Math.random()-0.5; });
+  var shuffled = shuffle(ALL_CONSTELLATIONS.slice());
   var SHAPES = [
     shuffled[0].slice(0,4),
     shuffled[1].slice(0,6),
@@ -308,6 +271,7 @@
     shuffled[3].slice(0,3),
     shuffled[4].slice(0,4),
   ];
+
   var NODES = [];
   GROUPS.forEach(function(g, gi) {
     g.nodes.forEach(function(n, ni) {
@@ -316,9 +280,8 @@
   });
 
   function init() {
-    var canvas  = document.getElementById('hhMenuCanvas');
-    var btn     = document.getElementById('hhStarBtn');
-    if (!canvas || !btn) { setTimeout(init, 80); return; }
+    var canvas = document.getElementById('hhMenuCanvas');
+    if (!canvas) { setTimeout(init, 80); return; }
 
     var ctx = canvas.getContext('2d');
     var W, H, pts = [];
@@ -329,6 +292,7 @@
     var revealProgress = 0;
     var animDir = 0;
     var t = 0;
+    var highlightGroup = -1;
 
     function resize() {
       W = canvas.width  = window.innerWidth;
@@ -434,11 +398,8 @@
           var dx = p.rx - g.cx, dy = p.ry - g.cy;
           var len = Math.sqrt(dx*dx+dy*dy) || 0.001;
           var nx = dx/len, ny = dy/len;
-          
-          /* 텍스트량에 따라 확장되는 로직 반영 */
           var textBonus = Math.max(0, (p.label.length - 4) * 4);
           var baseDist = Math.min(vw,vh)*0.03 + sw*0.1 + textBonus;
-          
           var bestX = -1, bestY = -1;
           for (var ai = 0; ai < tryAngles.length; ai++) {
             var rad = tryAngles[ai]*Math.PI/180;
@@ -541,58 +502,7 @@
       }
     }
 
-    window.addEventListener('resize', resize);
-    canvas.addEventListener('mousemove', function(e) { mouse.x = e.clientX; mouse.y = e.clientY; });
-    canvas.addEventListener('click', function(e) {
-      if (hoveredIdx < 0) { isOpen = false; animDir = -1; btn.classList.remove('open'); var lbl = document.getElementById('hhStarLabels'); if (lbl) lbl.style.opacity = '0'; return; }
-      window.location.href = pts[hoveredIdx].url;
-    });
-    btn.addEventListener('click', function(e) {
-      e.stopPropagation(); isOpen = !isOpen; var labelsEl = document.getElementById('hhStarLabels');
-      if (isOpen) { canvas.classList.add('open'); animDir = 1; btn.classList.add('open'); if (labelsEl) labelsEl.style.opacity = '1'; selectedIdx = -1; }
-      else { animDir = -1; btn.classList.remove('open'); if (labelsEl) labelsEl.style.opacity = '0'; selectedIdx = -1; }
-    });
-
-    var highlightGroup = -1;
-    var pillMenuBtn = document.getElementById('hhPillMenuBtn');
-    if (pillMenuBtn) {
-      pillMenuBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); isOpen = !isOpen; var labelsEl = document.getElementById('hhStarLabels');
-        if (isOpen) { canvas.classList.add('open'); animDir = 1; btn.classList.add('open'); if (labelsEl) labelsEl.style.opacity = '1'; highlightGroup = -1; updatePillActive(-1); }
-        else { animDir = -1; btn.classList.remove('open'); if (labelsEl) labelsEl.style.opacity = '0'; highlightGroup = -1; updatePillActive(-1); }
-      });
-    }
-
-    function updatePillActive(gi) {
-      var items = document.querySelectorAll('#hhPillNav .hh-pill-item[data-group]');
-      items.forEach(function(item) {
-        var g = parseInt(item.getAttribute('data-group'));
-        if (g === gi) item.classList.add('active'); else item.classList.remove('active');
-      });
-      var menuBtn = document.getElementById('hhPillMenuBtn');
-      if (menuBtn) { if (gi === -1 && isOpen) menuBtn.classList.add('active'); else menuBtn.classList.remove('active'); }
-      var feelBtn = document.getElementById('hhPillFeelBtn');
-      if (feelBtn) { if (gi === 4) feelBtn.classList.add('active'); else feelBtn.classList.remove('active'); }
-    }
-
-    var pillItems = document.querySelectorAll('#hhPillNav .hh-pill-item[data-group]');
-    pillItems.forEach(function(item) {
-      item.addEventListener('click', function(e) {
-        e.stopPropagation(); var gi = parseInt(item.getAttribute('data-group'));
-        if (isOpen && highlightGroup === gi) { isOpen = false; animDir = -1; btn.classList.remove('open'); var labelsEl = document.getElementById('hhStarLabels'); if (labelsEl) labelsEl.style.opacity = '0'; highlightGroup = -1; updatePillActive(-1); return; }
-        isOpen = true; animDir = 1; canvas.classList.add('open'); btn.classList.add('open'); var labelsEl = document.getElementById('hhStarLabels'); if (labelsEl) labelsEl.style.opacity = '1'; highlightGroup = gi; updatePillActive(gi);
-      });
-    });
-
-    var feelBtn = document.getElementById('hhPillFeelBtn');
-    if (feelBtn) {
-      feelBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        if (isOpen && highlightGroup === 4) { isOpen = false; animDir = -1; btn.classList.remove('open'); var labelsEl = document.getElementById('hhStarLabels'); if (labelsEl) labelsEl.style.opacity = '0'; highlightGroup = -1; updatePillActive(-1); return; }
-        isOpen = true; animDir = 1; canvas.classList.add('open'); btn.classList.add('open'); var labelsEl = document.getElementById('hhStarLabels'); if (labelsEl) labelsEl.style.opacity = '1'; highlightGroup = 4; updatePillActive(4);
-      });
-    }
-
+    /* ── 하이라이트: setInterval 제거 → 이벤트 호출 방식 ── */
     function applyHighlight() {
       if (highlightGroup < 0) {
         pts.forEach(function(p) {
@@ -613,7 +523,72 @@
         });
       }
     }
-    setInterval(applyHighlight, 50);
+
+    function setHighlight(gi) {
+      highlightGroup = gi;
+      applyHighlight();
+    }
+
+    function openMenu() {
+      isOpen = true; animDir = 1;
+      canvas.classList.add('open');
+      var labelsEl = document.getElementById('hhStarLabels');
+      if (labelsEl) labelsEl.style.opacity = '1';
+    }
+
+    function closeMenu() {
+      isOpen = false; animDir = -1;
+      var labelsEl = document.getElementById('hhStarLabels');
+      if (labelsEl) labelsEl.style.opacity = '0';
+    }
+
+    window.addEventListener('resize', resize);
+    canvas.addEventListener('mousemove', function(e) { mouse.x = e.clientX; mouse.y = e.clientY; });
+    canvas.addEventListener('click', function(e) {
+      if (hoveredIdx < 0) { closeMenu(); return; }
+      window.location.href = pts[hoveredIdx].url;
+    });
+
+    function updatePillActive(gi) {
+      var items = document.querySelectorAll('#hhPillNav .hh-pill-item[data-group]');
+      items.forEach(function(item) {
+        var g = parseInt(item.getAttribute('data-group'));
+        if (g === gi) item.classList.add('active'); else item.classList.remove('active');
+      });
+      var menuBtn = document.getElementById('hhPillMenuBtn');
+      if (menuBtn) { if (gi === -1 && isOpen) menuBtn.classList.add('active'); else menuBtn.classList.remove('active'); }
+      var feelBtn = document.getElementById('hhPillFeelBtn');
+      if (feelBtn) { if (gi === 4) feelBtn.classList.add('active'); else feelBtn.classList.remove('active'); }
+    }
+
+    var pillMenuBtn = document.getElementById('hhPillMenuBtn');
+    if (pillMenuBtn) {
+      pillMenuBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (isOpen) { closeMenu(); setHighlight(-1); updatePillActive(-1); }
+        else { openMenu(); setHighlight(-1); updatePillActive(-1); }
+      });
+    }
+
+    var pillItems = document.querySelectorAll('#hhPillNav .hh-pill-item[data-group]');
+    pillItems.forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var gi = parseInt(item.getAttribute('data-group'));
+        if (isOpen && highlightGroup === gi) { closeMenu(); setHighlight(-1); updatePillActive(-1); return; }
+        openMenu(); setHighlight(gi); updatePillActive(gi);
+      });
+    });
+
+    var feelBtn = document.getElementById('hhPillFeelBtn');
+    if (feelBtn) {
+      feelBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (isOpen && highlightGroup === 4) { closeMenu(); setHighlight(-1); updatePillActive(-1); return; }
+        openMenu(); setHighlight(4); updatePillActive(4);
+      });
+    }
+
     resize(); draw();
   }
   setTimeout(init, 0);
