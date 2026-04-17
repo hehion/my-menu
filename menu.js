@@ -193,7 +193,7 @@
       { label: 'ZIZ',              url: 'https://hh-hub.blogspot.com' },
       { label: 'flow',             url: 'https://hhflowmap.blogspot.com/2026/04/flow-map.html' },
       { label: 'Learn!Run!',             url: 'https://hhlearnrun.blogspot.com' },
-      { label: 'AloneorTogether',  url: 'https://hhaloneortogether.blogspot.com/p/contents.html' },
+      { label: 'Alone/Together',  url: 'https://hhaloneortogether.blogspot.com/p/contents.html' },
     ]},
     { name: '', hidden: true, cx: zHIDN.cx, cy: zHIDN.cy, sx: zHIDN.sx, sy: zHIDN.sy, nodes: [
       { label: "'s today",         url: 'https://hhtoday.blogspot.kr/' },
