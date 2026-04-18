@@ -21,12 +21,12 @@
 .hh-menu-tip {
   position: fixed;
   pointer-events: none;
-  font-size: 12px;
+  font-size: 2.2vmin; /* vmin 적용 */
   letter-spacing: 0.1em;
   color: #f0ede8;
   background: rgba(28,28,26,0.88);
   border: 1px solid rgba(200,196,188,0.2);
-  padding: 3px 8px;
+  padding: 0.6vmin 1.5vmin;
   border-radius: 4px;
   opacity: 0;
   transition: opacity 0.15s ease;
@@ -45,21 +45,26 @@
   z-index:9999; width:fit-content; min-width:140px;
   overflow:hidden; line-height:1.4;
 }
+/* 모바일에서 카드 크기 조정 */
+@media (max-width: 768px) {
+  .hh-contact-card { bottom: 15px; right: 15px; transform: scale(0.9); transform-origin: bottom right; }
+}
+
 .hh-identity { padding:15px 15px 8px 15px; }
-.hh-name { display:block; font-size:18px; font-weight:900; color:#000; text-decoration:none; margin-bottom:2px; transition:transform 0.3s ease-in-out; }
+.hh-name { display:block; font-size:3.5vmin; font-weight:900; color:#000; text-decoration:none; margin-bottom:2px; transition:transform 0.3s ease-in-out; }
 .hh-name:hover { transform:scale(1.1) translateY(-3px); }
-.hh-email { font-size:12px; color:#666; }
+.hh-email { font-size:2.2vmin; color:#666; }
 .hh-social-links { display:flex; justify-content:center; align-items:center; gap:5px; padding:0 15px 12px 15px; flex-wrap:wrap; }
 .hh-social-links img { height:auto; object-fit:contain; transition:all 0.2s ease; filter:grayscale(100%); opacity:0.7; }
-.hh-social-links img.icon-lg-adj { width:22px; }
-.hh-social-links img.icon-default { width:17.5px; }
-.hh-social-links img.icon-sm-adj { width:15px; }
+.hh-social-links img.icon-lg-adj { width:4.2vmin; }
+.hh-social-links img.icon-default { width:3.4vmin; }
+.hh-social-links img.icon-sm-adj { width:3vmin; }
 .hh-social-links a:hover img { transform:scale(1.3); filter:grayscale(0%); opacity:1; }
-.hh-business { font-size:13px; color:#555; padding:10px 15px; border-top:1px solid rgba(0,0,0,0.08); }
+.hh-business { font-size:2.5vmin; color:#555; padding:10px 15px; border-top:1px solid rgba(0,0,0,0.08); }
 .hh-business a { color:#2288bb; text-decoration:none; font-weight:bold; }
 .divider { margin:0 5px; color:#ccc; }
-.hh-brand-name { margin-top:4px; font-size:11px; color:#999; }
-.hh-integrated-top { background-color:rgba(34,34,34,0.5); color:#fff; font-size:15px; font-weight:bold; padding:10px 0; cursor:pointer; transition:all 0.3s ease; user-select:none; }
+.hh-brand-name { margin-top:4px; font-size:2vmin; color:#999; }
+.hh-integrated-top { background-color:rgba(34,34,34,0.5); color:#fff; font-size:2.8vmin; font-weight:bold; padding:10px 0; cursor:pointer; transition:all 0.3s ease; user-select:none; }
 .hh-integrated-top:hover { background-color:rgba(0,0,0,0.75); letter-spacing:1px; }
 
 /* 헤더 숨기기 */
@@ -78,13 +83,19 @@
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 18px;
+  justify-content: space-between; /* 모바일 대응 */
+  gap: 2.5vmin;
   background: transparent;
   padding: 0;
   height: 54px;
   z-index: 99998;
   user-select: none;
   white-space: nowrap;
+}
+
+/* 모바일에서 네비게이션 폭 확장 */
+@media (max-width: 768px) {
+  #hhPillNav { width: 90%; gap: 1vmin; }
 }
 
 .hh-pill-sep {
@@ -104,8 +115,10 @@
 }
 
 .hh-star-node {
-  width: 42px;
-  height: 42px;
+  width: 7.5vmin; /* vmin 기반 크기 조정 */
+  height: 7.5vmin;
+  min-width: 38px;
+  min-height: 38px;
   border-radius: 50%;
   background: rgba(45, 42, 35, 0.95);
   border: 1px solid rgba(200, 188, 140, 0.3);
@@ -114,7 +127,7 @@
   justify-content: center;
   animation: hhStarFloat var(--float-dur) ease-in-out infinite;
   color: rgba(224, 218, 200, 0.8);
-  font-size: 14px;
+  font-size: 2.5vmin; /* 기준 폰트 크기 */
   letter-spacing: 0.05em;
   font-weight: bold;
 }
@@ -338,7 +351,7 @@
       GROUPS.forEach(function(g, gi) {
         if (!g.name) return;
         var el = document.createElement('div');
-        el.style.cssText = 'position:absolute;font-size:14px;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;transform:translate(-50%,-50%);pointer-events:none;will-change:left,top,color;font-weight:bold;';
+        el.style.cssText = 'position:absolute;font-size:3vmin;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;transform:translate(-50%,-50%);pointer-events:none;will-change:left,top,color;font-weight:bold;';
         el.textContent = g.name;
         var anchorLeft = g.cx * 100;
         var anchorTop  = g.cy * 100;
@@ -368,7 +381,8 @@
       var labelItems = [];
       pts.forEach(function(p, pi) {
         var el = document.createElement('div');
-        el.style.cssText = 'position:absolute;font-size:14px;color:'+(p.hidden?'rgba(230,224,210,0.08)':'rgba(230,224,210,0.88)')+';white-space:nowrap;pointer-events:auto;cursor:pointer;padding:0.2vmin 0.4vmin;transition:color .15s;user-select:none;line-height:1.5;letter-spacing:0.04em;background:none;';
+        // 별자리 라벨 폰트 크기 3.2vmin으로 확대
+        el.style.cssText = 'position:absolute;font-size:2.7vmin;color:'+(p.hidden?'rgba(230,224,210,0.08)':'rgba(230,224,210,0.88)')+';white-space:nowrap;pointer-events:auto;cursor:pointer;padding:0.2vmin 0.4vmin;transition:color .15s;user-select:none;line-height:1.5;letter-spacing:0.04em;background:none;';
         el.textContent = p.label;
         el.style.left = (p.rx*100)+'%';
         el.style.top  = (p.ry*100)+'%';
@@ -404,7 +418,7 @@
           var len = Math.sqrt(dx*dx+dy*dy) || 0.001;
           var nx = dx/len, ny = dy/len;
           var textBonus = Math.max(0, (p.label.length - 4) * 4);
-          var baseDist = Math.min(vw,vh)*0.03 + sw*0.1 + textBonus;
+          var baseDist = Math.min(vw,vh)*0.04 + sw*0.1 + textBonus; // 간격 약간 조정
           var bestX = -1, bestY = -1;
           for (var ai = 0; ai < tryAngles.length; ai++) {
             var rad = tryAngles[ai]*Math.PI/180;
@@ -507,7 +521,6 @@
       }
     }
 
-    /* ── 하이라이트: setInterval 제거 → 이벤트 호출 방식 ── */
     function applyHighlight() {
       if (highlightGroup < 0) {
         pts.forEach(function(p) {
