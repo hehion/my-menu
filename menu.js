@@ -408,7 +408,28 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
           }
           p._hovered = false;
         });
-        el.addEventListener('click', function(e){ e.stopPropagation(); window.location.href=p.url; });
+        el.addEventListener('click', function(e){
+          e.stopPropagation();
+          if (isTouchDevice) {
+            if (p._selectedByTouch) {
+              window.location.href = p.url;
+            } else {
+              // 기존 선택 해제
+              pts.forEach(function(op) {
+                if (op._selectedByTouch && op._labelEl) {
+                  op._selectedByTouch = false;
+                  op._labelEl.style.color = op.hidden ? 'rgba(230,224,210,0.08)' : (op._dimmed ? 'rgba(230,224,210,0.18)' : 'rgba(230,224,210,0.88)');
+                  op._labelEl.style.fontWeight = '';
+                }
+              });
+              p._selectedByTouch = true;
+              el.style.color = '#ffffff';
+              el.style.fontWeight = 'bold';
+            }
+          } else {
+            window.location.href = p.url;
+          }
+        });
       });
       setTimeout(function() {
         var placed = [];
@@ -560,15 +581,42 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
 
     function closeMenu() {
       isOpen = false; animDir = -1;
+      selectedIdx = -1;
+      pts.forEach(function(p) {
+        if (p._selectedByTouch) {
+          p._selectedByTouch = false;
+          if (p._labelEl) {
+            p._labelEl.style.color = p.hidden ? 'rgba(230,224,210,0.08)' : (p._dimmed ? 'rgba(230,224,210,0.18)' : 'rgba(230,224,210,0.88)');
+            p._labelEl.style.fontWeight = '';
+          }
+        }
+      });
       var labelsEl = document.getElementById('hhStarLabels');
       if (labelsEl) labelsEl.style.opacity = '0';
     }
 
+    var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
     window.addEventListener('resize', resize);
     canvas.addEventListener('mousemove', function(e) { mouse.x = e.clientX; mouse.y = e.clientY; });
+
+    canvas.addEventListener('touchstart', function(e) {
+      var touch = e.touches[0];
+      mouse.x = touch.clientX;
+      mouse.y = touch.clientY;
+    }, { passive: true });
+
     canvas.addEventListener('click', function(e) {
       if (hoveredIdx < 0) { closeMenu(); return; }
-      window.location.href = pts[hoveredIdx].url;
+      if (isTouchDevice) {
+        if (selectedIdx === hoveredIdx) {
+          window.location.href = pts[hoveredIdx].url;
+        } else {
+          selectedIdx = hoveredIdx;
+        }
+      } else {
+        window.location.href = pts[hoveredIdx].url;
+      }
     });
 
     function updatePillActive(gi) {
