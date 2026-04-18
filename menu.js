@@ -180,7 +180,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
 
 <div class="hh-contact-card">
   <div class="hh-identity">
-    <a href="https://hehion.blogspot.com/p/hh.html" class="hh-name">HH입니다</a>
+    <a href="https://hhcenter.blogspot.com/p/hh.html" class="hh-name">HH입니다</a>
     <span class="hh-email">hehion@gmail.com</span>
   </div>
   <div class="hh-social-links" style="padding-bottom:5px;">
