@@ -175,7 +175,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
   <div class="hh-pill-item hh-star-node" data-group="3" style="--float-y: 2px; --float-dur: 3.2s;">WAY</div>
   
   <div class="hh-pill-sep"></div>
-  <div class="hh-pill-item hh-star-node hh-pill-feel-btn" id="hhPillFeelBtn" style="--float-y: 4px; --float-dur: 2.8s;">RAW<!--구FEEL--></div>
+  <div class="hh-pill-item hh-star-node hh-pill-feel-btn" id="hhPillFeelBtn" style="--float-y: 4px; --float-dur: 2.8s;">RAW</div>
 </div>
 
 <div class="hh-contact-card">
@@ -389,7 +389,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       var labelItems = [];
       pts.forEach(function(p, pi) {
         var el = document.createElement('div');
-        el.style.cssText = 'position:absolute;font-size:2.7vmin;color:'+(p.hidden?'rgba(230,224,210,0.08)':'rgba(230,224,210,0.88)')+';white-space:nowrap;pointer-events:auto;cursor:pointer;padding:0.2vmin 0.4vmin;transition:color .15s;user-select:none;line-height:1.5;letter-spacing:0.04em;background:none;';
+        el.style.cssText = 'position:absolute;font-size:2.7vmin;color:'+(p.hidden?'rgba(230,224,210,0.08)':'rgba(230,224,210,0.88)')+';white-space:nowrap;pointer-events:none;cursor:pointer;padding:0.2vmin 0.4vmin;transition:color .15s;user-select:none;line-height:1.5;letter-spacing:0.04em;background:none;';
         el.textContent = p.label;
         el.style.left = (p.rx*100)+'%';
         el.style.top  = (p.ry*100)+'%';
@@ -399,6 +399,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
         p._labelEl = el;
         p._idx = pi;
         el.addEventListener('mouseenter', function(){
+          if (!isOpen) return;
           el.style.color=p.hidden?'rgba(230,224,210,0.3)':'#ffffff';
           p._hovered = true;
         });
@@ -412,12 +413,12 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
           p._hovered = false;
         });
         el.addEventListener('click', function(e){
+          if (!isOpen) return;
           e.stopPropagation();
           if (isTouchDevice) {
             if (p._selectedByTouch) {
               window.location.href = p.url;
             } else {
-              // 기존 선택 해제
               pts.forEach(function(op) {
                 if (op._selectedByTouch && op._labelEl) {
                   op._selectedByTouch = false;
@@ -437,6 +438,8 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       setTimeout(function() {
         var placed = [];
         var vw = window.innerWidth, vh = window.innerHeight;
+        placed.push({x: 0, y: 0, w: vw, h: 95}); 
+
         var tryAngles = [0,25,-25,50,-50,75,-75,100,-100,125,-125,150,-150,175,-175,180];
         labelItems.forEach(function(item) {
           var p = item.p, el = item.el;
@@ -470,7 +473,11 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
         });
       }, 50);
       document.body.appendChild(wrap);
-      if (isOpen) wrap.style.opacity = '1';
+      if (isOpen) {
+        wrap.style.opacity = '1';
+        wrap.style.pointerEvents = 'auto';
+        pts.forEach(p => { if(p._labelEl) p._labelEl.style.pointerEvents = 'auto'; });
+      }
     }
 
     function draw() {
@@ -482,7 +489,10 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
         if (revealProgress === 0) {
           canvas.classList.remove('open');
           var lbl = document.getElementById('hhStarLabels');
-          if (lbl) lbl.style.opacity = '0';
+          if (lbl) {
+            lbl.style.opacity = '0';
+            lbl.style.pointerEvents = 'none';
+          }
         }
       }
       ctx.clearRect(0, 0, W, H);
@@ -579,7 +589,11 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       isOpen = true; animDir = 1;
       canvas.classList.add('open');
       var labelsEl = document.getElementById('hhStarLabels');
-      if (labelsEl) labelsEl.style.opacity = '1';
+      if (labelsEl) {
+        labelsEl.style.opacity = '1';
+        labelsEl.style.pointerEvents = 'auto';
+        pts.forEach(p => { if(p._labelEl) p._labelEl.style.pointerEvents = 'auto'; });
+      }
     }
 
     function closeMenu() {
@@ -593,9 +607,13 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
             p._labelEl.style.fontWeight = '';
           }
         }
+        if (p._labelEl) p._labelEl.style.pointerEvents = 'none';
       });
       var labelsEl = document.getElementById('hhStarLabels');
-      if (labelsEl) labelsEl.style.opacity = '0';
+      if (labelsEl) {
+        labelsEl.style.opacity = '0';
+        labelsEl.style.pointerEvents = 'none';
+      }
     }
 
     var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
@@ -611,6 +629,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
 
     canvas.addEventListener('click', function(e) {
       if (hoveredIdx < 0) { closeMenu(); return; }
+      if (!isOpen) return;
       if (isTouchDevice) {
         if (selectedIdx === hoveredIdx) {
           window.location.href = pts[hoveredIdx].url;
