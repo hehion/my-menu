@@ -51,20 +51,20 @@
 }
 
 .hh-identity { padding:15px 15px 8px 15px; }
-.hh-name { display:block; font-size:3.5vmin; font-weight:900; color:#000; text-decoration:none; margin-bottom:2px; transition:transform 0.3s ease-in-out; }
+.hh-name { display:block; font-size:2.3vmin; font-weight:900; color:#000; text-decoration:none; margin-bottom:2px; transition:transform 0.3s ease-in-out; }
 .hh-name:hover { transform:scale(1.1) translateY(-3px); }
-.hh-email { font-size:2.2vmin; color:#666; }
+.hh-email { font-size:2vmin; color:#666; }
 .hh-social-links { display:flex; justify-content:center; align-items:center; gap:5px; padding:0 15px 12px 15px; flex-wrap:wrap; }
 .hh-social-links img { height:auto; object-fit:contain; transition:all 0.2s ease; filter:grayscale(100%); opacity:0.7; }
-.hh-social-links img.icon-lg-adj { width:4.2vmin; }
-.hh-social-links img.icon-default { width:3.4vmin; }
-.hh-social-links img.icon-sm-adj { width:3vmin; }
+.hh-social-links img.icon-lg-adj { width:3.1vmin; }
+.hh-social-links img.icon-default { width:2.7vmin; }
+.hh-social-links img.icon-sm-adj { width:2.4vmin; }
 .hh-social-links a:hover img { transform:scale(1.3); filter:grayscale(0%); opacity:1; }
-.hh-business { font-size:2.5vmin; color:#555; padding:10px 15px; border-top:1px solid rgba(0,0,0,0.08); }
+.hh-business { font-size:2vmin; color:#555; padding:10px 15px; border-top:1px solid rgba(0,0,0,0.08); }
 .hh-business a { color:#2288bb; text-decoration:none; font-weight:bold; }
 .divider { margin:0 5px; color:#ccc; }
 .hh-brand-name { margin-top:4px; font-size:2vmin; color:#999; }
-.hh-integrated-top { background-color:rgba(34,34,34,0.5); color:#fff; font-size:2.8vmin; font-weight:bold; padding:10px 0; cursor:pointer; transition:all 0.3s ease; user-select:none; }
+.hh-integrated-top { background-color:rgba(34,34,34,0.5); color:#fff; font-size:2.5vmin; font-weight:bold; padding:10px 0; cursor:pointer; transition:all 0.3s ease; user-select:none; }
 .hh-integrated-top:hover { background-color:rgba(0,0,0,0.75); letter-spacing:1px; }
 
 /* 헤더 숨기기 및 본문 여백 강제 확보 */
