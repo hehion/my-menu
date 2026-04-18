@@ -21,7 +21,7 @@
 .hh-menu-tip {
   position: fixed;
   pointer-events: none;
-  font-size: 2.2vmin; /* vmin 적용 */
+  font-size: 2.2vmin;
   letter-spacing: 0.1em;
   color: #f0ede8;
   background: rgba(28,28,26,0.88);
@@ -67,8 +67,9 @@
 .hh-integrated-top { background-color:rgba(34,34,34,0.5); color:#fff; font-size:2.8vmin; font-weight:bold; padding:10px 0; cursor:pointer; transition:all 0.3s ease; user-select:none; }
 .hh-integrated-top:hover { background-color:rgba(0,0,0,0.75); letter-spacing:1px; }
 
-/* 헤더 숨기기 */
+/* 헤더 숨기기 및 본문 여백 강제 확보 */
 .title, h1.title, .header-outer, #header-outer, #header, .header, .header-inner, #header-inner { display:none !important; }
+body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 본문 밀기 */
 
 /* ── Pill 네비바 ── */
 @keyframes hhStarFloat {
@@ -78,12 +79,12 @@
 
 #hhPillNav {
   position: fixed;
-  top: 14px;
+  top: 25px; /* 상단 여백 확대 */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 모바일 대응 */
+  justify-content: center;
   gap: 2.5vmin;
   background: transparent;
   padding: 0;
@@ -93,9 +94,14 @@
   white-space: nowrap;
 }
 
-/* 모바일에서 네비게이션 폭 확장 */
+/* 모바일 대응: 상단 여백 및 크기 조정 */
 @media (max-width: 768px) {
-  #hhPillNav { width: 90%; gap: 1vmin; }
+  #hhPillNav { 
+    top: 20px; 
+    width: 95%; 
+    gap: 1.5vmin; 
+  }
+  body { padding-top: 100px !important; } /* 모바일에서 더 넉넉한 하단 여백 */
 }
 
 .hh-pill-sep {
@@ -115,7 +121,7 @@
 }
 
 .hh-star-node {
-  width: 7.5vmin; /* vmin 기반 크기 조정 */
+  width: 7.5vmin;
   height: 7.5vmin;
   min-width: 38px;
   min-height: 38px;
@@ -127,7 +133,7 @@
   justify-content: center;
   animation: hhStarFloat var(--float-dur) ease-in-out infinite;
   color: rgba(224, 218, 200, 0.8);
-  font-size: 2.5vmin; /* 기준 폰트 크기 */
+  font-size: 2.5vmin;
   letter-spacing: 0.05em;
   font-weight: bold;
 }
@@ -186,7 +192,7 @@
   </div>
   <div class="hh-social-links" style="padding-top:0; padding-bottom:12px;">
     <a href="https://brunch.co.kr/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTKV7FiKVVCJWm2vEmDlzwRqrENGPefZr2GLUjkeT3kZTygSsvyhw959-emmV17sZ2rWwcLwPEZuGG98B4m4SMH8WfCcuDxx9hS9PZbxnKVj_EbcpafV5dfnCub3Iyhop8XVE4uNvE-9QgKgonDuUlSLL29nXPBUbc58pA2Arz2lx46cikKymOGkh8pMk/s320/zwv8-ymenlfEcYrfDRTpLYuQwfQ.jpg" alt="brunch" class="icon-default"></a>
-    <a href="https://smartstore.naver.com/hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP7hbViO0195C-Ur5u9aOErxK7_seKLEFHv6htcmJD6Y4oZflgvW0Pd4ccnhXjy-69UgMbdbES7B0Wxk6jsjNpx8rjb7icn9PW7VVgSfGoxehvpjNPPujp81NmboIYwzOYfoi8x0viuQR-D2dfWsY0dS81U4p8b9IuzOU6FFlbFmAFkvu8rAcGPv2F4dk/s1600/smartstore.png" alt="smartstore" class="icon-default"></a>
+    <a href="https://smartstore.naver.com/hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP7hbViO0195C-Ur5u9aOErxK7_seKLEFHv6htcmJD6Y4oZflgvW0Pd4ccnhXjy-69UgMbdbES7B0Wxk6jsjNpx8rjb7icn9PW7VVgSfGoxehvpjNPPujp81NmboIYzOYfoi8x0viuQR-D2dfWsY0dS81U4p8b9IuzOU6FFlbFmAFkvu8rAcGPv2F4dk/s1600/smartstore.png" alt="smartstore" class="icon-default"></a>
     <a href="https://www.tiktok.com/@hehion" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgikhhEX255bDr60DDiyaRUzlRksOOEC3SV9btjM7x-rTHg5EjlEf_s_7gKKHz3XXEb2k1MhsvIMpJdkXs2q-oEwdN2bl04oMdtXdj8PPV943iHe84haxmyRQulxRzk3p3svHC3Gxm0Av4VFAtcG_Fh468jLwa_uSNzJk8R0fmyv1a_FQx1p8PqZDcwu8k/s320/tictok.png" alt="tiktok" class="icon-default"></a>
     <a href="https://www.threads.com/@hehion.c" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqfsGOi7NXv0Jyld5_W3DdI8Y2tzdziZ-m-PuU9gSMts8qz_EI04JvN6R7vnw3j08dGjd1LxyvhN6ofvTpHeNHTRPoOLGeQzyxHLYVueOqwcoe7op9EmmioY-hEotMLRiwgt94YViwdtjC7Alb7Wr8Vd9Bu_JRg8E764cla1ZlxMmEiMGibaLawZa0ey4/s320/threads.png" alt="threads" class="icon-default"></a>
   </div>
@@ -209,7 +215,6 @@
     { cx: 0.86, cy: 0.74, sx: 0.07, sy: 0.09 },
   ];
 
-  /* Fisher-Yates 셔플 */
   function shuffle(arr) {
     for (var i = arr.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -381,7 +386,6 @@
       var labelItems = [];
       pts.forEach(function(p, pi) {
         var el = document.createElement('div');
-        // 별자리 라벨 폰트 크기 3.2vmin으로 확대
         el.style.cssText = 'position:absolute;font-size:2.7vmin;color:'+(p.hidden?'rgba(230,224,210,0.08)':'rgba(230,224,210,0.88)')+';white-space:nowrap;pointer-events:auto;cursor:pointer;padding:0.2vmin 0.4vmin;transition:color .15s;user-select:none;line-height:1.5;letter-spacing:0.04em;background:none;';
         el.textContent = p.label;
         el.style.left = (p.rx*100)+'%';
@@ -418,7 +422,7 @@
           var len = Math.sqrt(dx*dx+dy*dy) || 0.001;
           var nx = dx/len, ny = dy/len;
           var textBonus = Math.max(0, (p.label.length - 4) * 4);
-          var baseDist = Math.min(vw,vh)*0.04 + sw*0.1 + textBonus; // 간격 약간 조정
+          var baseDist = Math.min(vw,vh)*0.04 + sw*0.1 + textBonus;
           var bestX = -1, bestY = -1;
           for (var ai = 0; ai < tryAngles.length; ai++) {
             var rad = tryAngles[ai]*Math.PI/180;
