@@ -257,7 +257,8 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: 'MathScience',      url: 'https://hhmathscience.blogspot.com' },
     ]},
     { name: 'WAY', cx: zWAY.cx, cy: zWAY.cy, sx: zWAY.sx, sy: zWAY.sy, nodes: [
-      { label: 'ZIZ',              url: 'https://hh-hub.blogspot.com' },
+      { label: 'HUB',              url: 'https://hh-hub.blogspot.com' },
+      { label: 'ZIZ',              url: 'https://hhziz.blogspot.com' },
       { label: 'flow',             url: 'https://hhflowmap.blogspot.com' },
       { label: 'Learn!Run!',       url: 'https://hhlearnrun.blogspot.com' },
       { label: 'Alone/Together',   url: 'https://hhaloneortogether.blogspot.com' },
