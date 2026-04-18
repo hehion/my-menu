@@ -61,37 +61,37 @@ div.widget h2.title {
 
 /* 7. 블로그 전체 폭 (아까 언급한 중앙 제어용) */
 .content-outer, .main-outer {
-    max-width: 990px !important; /* 원하는 폭으로 고정 가능 */
+    max-width: 100% !important; /* 원하는 폭으로 고정 가능 */
     margin: 0 auto !important;
 }
 
 body {
-min-width: 960px; !important;
+min-width: 78%; !important;
 }
 .content-outer, .content-fauxcolumn-outer, .region-inner {
-min-width: 990px; !important;
-max-width: 990px; !important;
-_width: 990px; !important;
+min-width: 78%; !important;
+max-width: 78%; !important;
+_width: 78%; !important;
 }
 
 .main-inner .columns {
 padding-left: 0;
-padding-right: 210px; !important;
+padding-right: 22%; !important;
 }
 .main-inner .fauxcolumn-center-outer {
 left: 0;
-right: 210px; !important;
+right: 22%; !important;
 /* IE6 does not respect left and right together */
 _width: expression(this.parentNode.offsetWidth -
 parseInt("0") -
-parseInt("210px") + 'px'); !important;
+parseInt("22%") + '%'); !important;
 }
 .main-inner .fauxcolumn-right-outer {
-width: 210px; !important;
+width: 22%; !important;
 }
 .main-inner .column-right-outer {
-width: 210px; !important;
-margin-right: -210px; !important;
+width: 22%; !important;
+margin-right: -22%; !important;
 }
 
 /* 8. 문의 양식 및 검색 가젯 통합 시공 (가변형 입력창 설계) */
