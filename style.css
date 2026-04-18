@@ -61,7 +61,7 @@ div.widget h2.title {
 
 /* 7. 블로그 전체 폭 (아까 언급한 중앙 제어용) */
 .content-outer, .main-outer {
-    max-width: 100% !important; /* 원하는 폭으로 고정 가능 */
+    max-width: 93% !important; /* 원하는 폭으로 고정 가능 */
     margin: 0 auto !important;
 }
 
