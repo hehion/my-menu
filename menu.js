@@ -175,7 +175,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
   <div class="hh-pill-item hh-star-node" data-group="3" style="--float-y: 2px; --float-dur: 3.2s;">WAY</div>
   
   <div class="hh-pill-sep"></div>
-  <div class="hh-pill-item hh-star-node hh-pill-feel-btn" id="hhPillFeelBtn" style="--float-y: 4px; --float-dur: 2.8s;">FEEL</div>
+  <div class="hh-pill-item hh-star-node hh-pill-feel-btn" id="hhPillFeelBtn" style="--float-y: 4px; --float-dur: 2.8s;">RAW<!--구FEEL--></div>
 </div>
 
 <div class="hh-contact-card">
@@ -232,8 +232,8 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
 
   var GROUPS = [
     { name: 'HH',   cx: zHH.cx,   cy: zHH.cy,   sx: zHH.sx,   sy: zHH.sy,   nodes: [
-      { label: 'gate',             url: 'https://hehion.blogspot.com' },
-      { label: 'main',             url: 'https://hhcenter.blogspot.com' },
+      { label: 'GATE',             url: 'https://hehion.blogspot.com' },
+      { label: 'MAIN',             url: 'https://hhcenter.blogspot.com' },
       { label: '가라!종이비행기',  url: 'https://hhcenter.blogspot.com/p/flytothe.html' },
       { label: 'hh',               url: 'https://hhcenter.blogspot.com/p/i.html' },
       { label: 'scrap',            url: 'https://hhscrap.blogspot.com' },
@@ -263,10 +263,10 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: 'Alone/Together',   url: 'https://hhaloneortogether.blogspot.com' },
     ]},
     { name: '', hidden: true, cx: zHIDN.cx, cy: zHIDN.cy, sx: zHIDN.sx, sy: zHIDN.sy, nodes: [
-      { label: "'s today",         url: 'https://hhtoday.blogspot.com' },
-      { label: "'s yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
-      { label: "'s tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
-      { label: "'s \u2605",        url: 'https://hhfavorite.blogspot.com' },
+      { label: "hh's today",         url: 'https://hhtoday.blogspot.com' },
+      { label: "hh's yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
+      { label: "hh's tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
+      { label: "hh's \u2605",        url: 'https://hhfavorite.blogspot.com' },
       { label: "test0",        url: 'https://hh-test0.blogspot.com' },
     ]},
   ];
