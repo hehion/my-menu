@@ -171,7 +171,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
   
   <div class="hh-pill-item hh-star-node" data-group="0" style="--float-y: -4px; --float-dur: 3s;">HH</div>
   <div class="hh-pill-item hh-star-node" data-group="1" style="--float-y: 3px; --float-dur: 3.5s;">ARCH</div>
-  <div class="hh-pill-item hh-star-node" data-group="2" style="--float-y: -5px; --float-dur: 4s;">DO</div>
+  <div class="hh-pill-item hh-star-node" data-group="2" style="--float-y: -5px; --float-dur: 4s;">FLIP</div>
   <div class="hh-pill-item hh-star-node" data-group="3" style="--float-y: 2px; --float-dur: 3.2s;">WAY</div>
   
   <div class="hh-pill-sep"></div>
@@ -248,7 +248,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: '..inNC',           url: 'https://hhinnc.blogspot.com' },
       { label: '..inCS',           url: 'https://hhincs.blogspot.com' },
     ]},
-    { name: 'DO',   cx: zDO.cx,   cy: zDO.cy,   sx: zDO.sx,   sy: zDO.sy,   nodes: [
+    { name: 'FLIP',   cx: zDO.cx,   cy: zDO.cy,   sx: zDO.sx,   sy: zDO.sy,   nodes: [
       { label: 'Read&wRite',        url: 'https://hhreadwrite.blogspot.com' },
       { label: 'Chef!',            url: 'https://hhchef.blogspot.com' },
       { label: 'Movement',         url: 'https://hh-movement.blogspot.com' },
