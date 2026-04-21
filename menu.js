@@ -238,6 +238,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: 'MAIN',             url: 'https://hhcenter.blogspot.com' },
       { label: '가라!종이비행기',  url: 'https://hhcenter.blogspot.com/p/flytothe.html' },
       { label: 'hh',               url: 'https://hhcenter.blogspot.com/p/i.html' },
+      { label: 'sell',               url: 'https://hhsell.blogspot.com' },
       { label: 'scrap',            url: 'https://hhscrap.blogspot.com' },
     ]},
     { name: 'ARCH', cx: zARCH.cx, cy: zARCH.cy, sx: zARCH.sx, sy: zARCH.sy, nodes: [
@@ -266,10 +267,10 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: 'Alone/Together',   url: 'https://hhaloneortogether.blogspot.com' },
     ]},
     { name: '', hidden: true, cx: zHIDN.cx, cy: zHIDN.cy, sx: zHIDN.sx, sy: zHIDN.sy, nodes: [
-      { label: "hh's today",         url: 'https://hhtoday.blogspot.com' },
-      { label: "hh's yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
-      { label: "hh's tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
-      { label: "hh's \u2605",        url: 'https://hhfavorite.blogspot.com' },
+      { label: "today",         url: 'https://hhtoday.blogspot.com' },
+      { label: "yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
+      { label: "tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
+      { label: "\u2605",        url: 'https://hhfavorite.blogspot.com' },
       { label: "test0",        url: 'https://hh-test0.blogspot.com' },
     ]},
   ];
