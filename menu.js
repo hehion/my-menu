@@ -261,8 +261,8 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
     ]},
     { name: 'WAY', cx: zWAY.cx, cy: zWAY.cy, sx: zWAY.sx, sy: zWAY.sy, nodes: [
       { label: 'Intro',              url: 'https://hh-hub.blogspot.com' },
-      { label: 'ZIZ짓다',              url: 'https://hhziz.blogspot.com' },
-      { label: 'Flow잇다',             url: 'https://hhflowmap.blogspot.com' },
+      { label: '짓다ZIZ',              url: 'https://hhziz.blogspot.com' },
+      { label: '잇다Flow',             url: 'https://hhflowmap.blogspot.com' },
       { label: 'Learn!Run!',       url: 'https://hhlearnrun.blogspot.com' },
       { label: 'Alone/Together',   url: 'https://hhaloneortogether.blogspot.com' },
     ]},
