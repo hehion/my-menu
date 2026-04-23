@@ -188,14 +188,14 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
     <a href="https://www.tiktok.com/@hehion" target="_blank">tiktok</a>
   </div>
   <div class="hh-social-links" style="padding-top:0; padding-bottom:5px;">
+    <a href="https://www.threads.com/@hehion.c" target="_blank">threads</a>
     <a href="https://www.instagram.com/hehion.c/" target="_blank">insta</a>
     <a href="https://www.facebook.com/hehion" target="_blank">fbook</a>
-    <a href="https://www.threads.com/@hehion.c" target="_blank">threads</a>
     <a href="https://x.com/hehion" target="_blank">x</a>
   </div>
   <div class="hh-social-links" style="padding-top:0; padding-bottom:12px;">
     <a href="https://brunch.co.kr/@hehion" target="_blank">brunch</a>
-    <a href="https://hehion.blogspot.com/p/blog-page_13.html">kakao</a>
+    <a href="https://hhcenter.blogspot.com/p/blog-page_13.html">kakao</a>
   </div>
   <div class="hh-business">
     <a href="https://kmong.com/@에치에치" target="_blank">kmong</a>
