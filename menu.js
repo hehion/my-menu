@@ -258,6 +258,8 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: 'Play&Sing',        url: 'https://hhplaysing.blogspot.com' },
       { label: 'Coding',           url: 'https://hhcoding.blogspot.com' },
       { label: 'MathScience',      url: 'https://hhmathscience.blogspot.com' },
+      { label: 'Sewing',      url: 'https://hhsewing.blogspot.com' },
+      { label: 'CHooM',      url: 'https://hhchoom.blogspot.com' },
     ]},
     { name: 'WAY', cx: zWAY.cx, cy: zWAY.cy, sx: zWAY.sx, sy: zWAY.sy, nodes: [
       { label: 'WAY란?',              url: 'https://hh-hub.blogspot.com' },
