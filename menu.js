@@ -269,6 +269,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: 'Alone/Together',   url: 'https://hhaloneortogether.blogspot.com' },
     ]},
     { name: '', hidden: true, cx: zHIDN.cx, cy: zHIDN.cy, sx: zHIDN.sx, sy: zHIDN.sy, nodes: [
+      { label: "preyer",         url: 'https://hhprayer.blogspot.com' },
       { label: "today",         url: 'https://hhtoday.blogspot.com' },
       { label: "yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
       { label: "tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
