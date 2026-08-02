@@ -34,6 +34,8 @@
         <li><a href="https://hh-movement.blogspot.com" target="_blank">hh-movement</a></li>
         <li><a href="https://hhreadwrite.blogspot.com" target="_blank">hhreadwrite</a></li>
         <li><a href="https://hhplaysing.blogspot.com" target="_blank">hhplaysing</a></li>
+        <li><a href="https://hhsewing.blogspot.com" target="_blank">hhsewing</a></li>
+        <li><a href="https://hhchoom.blogspot.com" target="_blank">hhchoom</a></li>
       </ul>
       <div class="sitemap-spacer"></div>
       <ul class="sitemap-group">
@@ -45,6 +47,7 @@
       </ul>
       <div class="sitemap-spacer"></div>
       <ul class="sitemap-group">
+        <li><a href="https://hhprayer.blogspot.com" target="_blank">hhprayer</a></li>
         <li><a href="https://hhtoday.blogspot.com" target="_blank">hhtoday</a></li>
         <li><a href="https://hhyesterday.blogspot.com" target="_blank">hhyesterday</a></li>
         <li><a href="https://hhtomorrow.blogspot.com" target="_blank">hhtomorrow</a></li>
