@@ -52,6 +52,7 @@
         <li><a href="https://hhyesterday.blogspot.com" target="_blank">hhyesterday</a></li>
         <li><a href="https://hhtomorrow.blogspot.com" target="_blank">hhtomorrow</a></li>
         <li><a href="https://hhfavorite.blogspot.com" target="_blank">hhfavorite</a></li>
+        <li><a href="https://hh-ai.blogspot.com" target="_blank">hh-ai</a></li>
         <li><a href="https://hh-test0.blogspot.com" target="_blank">hh-test0</a></li>
       </ul>
     </div>

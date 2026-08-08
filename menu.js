@@ -274,6 +274,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: "yesterday",     url: 'https://hhyesterday.blogspot.com/p/20130728.html' },
       { label: "tomorrow",      url: 'https://hhtomorrow.blogspot.com' },
       { label: "\u2605",        url: 'https://hhfavorite.blogspot.com' },
+      { label: "AI",        url: 'https://hh-ai.blogspot.com' },
       { label: "test0",        url: 'https://hh-test0.blogspot.com' },
     ]},
   ];
