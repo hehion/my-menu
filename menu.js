@@ -260,6 +260,7 @@ body { padding-top: 85px !important; } /* 메뉴 하단 여백 확보를 위한 
       { label: 'MathScience',      url: 'https://hhmathscience.blogspot.com' },
       { label: 'Sewing',      url: 'https://hhsewing.blogspot.com' },
       { label: 'CHooM',      url: 'https://hhchoom.blogspot.com' },
+      { label: 'TRaVel',      url: 'https://hhtravel0.blogspot.com' },
     ]},
     { name: 'WAY', cx: zWAY.cx, cy: zWAY.cy, sx: zWAY.sx, sy: zWAY.sy, nodes: [
       { label: 'WAY란?',              url: 'https://hh-hub.blogspot.com' },
