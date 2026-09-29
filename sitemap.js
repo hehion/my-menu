@@ -36,7 +36,7 @@
         <li><a href="https://hhplaysing.blogspot.com" target="_blank">hhplaysing</a></li>
         <li><a href="https://hhsewing.blogspot.com" target="_blank">hhsewing</a></li>
         <li><a href="https://hhchoom.blogspot.com" target="_blank">hhchoom</a></li>
-        <li><a href="https://hhtravel0.blogspot.com" target="_blank">hhtravel</a></li>
+        <li><a href="https://hhtravel0.blogspot.com" target="_blank">hhtravel0</a></li>
       </ul>
       <div class="sitemap-spacer"></div>
       <ul class="sitemap-group">
